@@ -1,0 +1,111 @@
+{
+  "component": {
+    "list": {
+      "selectAll": "Seleccionar todos",
+      "selectPrevious": "Seleccionar anterior"
+    },
+    "nav": {
+      "current": "Datos actuales",
+      "historic": "Datos históricos",
+      "statistics": "Estadísticas",
+      "background": "Antecedentes",
+      "imprint": "Imprimir",
+      "login": "Login",
+      "logout": "Logout"
+    },
+    "plot": {
+      "threshold": "Límite",
+      "thresholdLower": "concentracion media (30 Pollen/m³)",
+      "thresholdUpper": "concentratión relevante (100 Pollen/m³)"
+    }
+  },
+  "dateTimeFormat": {
+    "excel": {
+      "full": "dd.mm.yyyy hh:mm"
+    },
+    "datetime": "DD.MM. HH:mm",
+    "time": "HH:mm",
+    "date": "YYYY-MM-DD"
+  },
+  "page": {
+    "statistics": {
+      "year": "Año",
+      "start": "Inicio",
+      "peak": "Pico",
+      "end": "Final",
+      "sum": "suma",
+      "noData": "Sin datos."
+    }
+  },
+  "pollenName": {
+    "Acer": "Arce",
+    "Cruciferae": "Crucíferas",
+    "Heracleum": "Apiáceas",
+    "Parietaria": "Parietaria",
+    "Pinaceae": "Pináceas",
+    "Triticum": "Trigo",
+    "Zea mays": "Maíz",
+    "Abies": "Abeto",
+    "Aesculus": "Aesculus",
+    "Alnus": "Aliso",
+    "Alternaria": "Alternaria",
+    "Ambrosia": "Ambrosia",
+    "Artemisia": "Artemisia",
+    "Asteraceae": "Compuestas",
+    "Betula": "Abedul",
+    "Brassica": "Brassica",
+    "Carpinus": "Carpino",
+    "Castanea": "Castaño",
+    "Chenopodium": "Chenopodium",
+    "Corylus": "Avellano",
+    "Cyperaceae": "Cyperaceae",
+    "Erica": "Erica",
+    "Fagus": "Fagus",
+    "Fraxinus": "Fresno",
+    "Fungus": "Hongos",
+    "Galium": "Galium",
+    "Glomerorum": "Esporas de hongo",
+    "Humulus": "Humulus",
+    "Impatiens": "Impatiens",
+    "Juglans": "Nogal",
+    "Juniperus": "Enebro",
+    "Larix": "Larix",
+    "Mercurialis": "Mercurialis",
+    "Picea": "Picea",
+    "Pinus": "Pino",
+    "Plantago": "Plantago",
+    "Platanus": "Plátano",
+    "Poaceae": "Gramíneas",
+    "Populus": "Álamo",
+    "Quercus": "Quercus",
+    "Quercus ilex": "Quercus ilex",
+    "Rumex": "Rumex",
+    "Salix": "Sauce",
+    "Sambucus": "Sambucus",
+    "Secale": "Secale",
+    "Solidago": "Solidago",
+    "Taraxacum": "Taraxacum",
+    "Taxus": "Tejo",
+    "Tilia": "Tilo",
+    "Ulmus": "Olmo",
+    "Urtica": "Ortiga",
+    "Varia": "Indeterminado"
+  },
+  "concentrations": "Concentración de polen",
+  "from": "desde",
+  "to": "hasta",
+  "unit": "Pollen/m³",
+  "pollen": "Pollen",
+  "location": "lugar",
+  "timeRange": "hora",
+  "month": "mes",
+  "months": "meses",
+  "display": "mostrar",
+  "today": "hoy",
+  "selectArea": "seleccionar área",
+  "moveTimeAxis": "mover eje temporal",
+  "resetView": "reiniciar vista",
+  "download": "descargar",
+  "lastMonth": "último mes",
+  "apply": "Aplicar"
+}

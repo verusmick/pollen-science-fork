@@ -1,0 +1,24 @@
+div.d-flex.page-root {
+    height: 100%;
+
+    > div.row.fill {
+        flex-grow: 1
+    }
+}
+
+div.btn-group {
+    label.btn-secondary.active {
+        background-color: #0062cc;
+    }
+}
+
+input.custom-range {
+    height: 2.5rem;
+}
+
+.rangeLabel {
+    white-space: nowrap; 
+}
+.btn-apply {
+    padding-left: 0;
+}

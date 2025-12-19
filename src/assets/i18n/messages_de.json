@@ -1,0 +1,111 @@
+{
+  "component": {
+    "list": {
+      "selectAll": "alle auswählen",
+      "selectPrevious": "vorherige auswählen"
+    },
+    "nav": {
+      "current": "Aktuelle Daten",
+      "historic": "Historische Daten",
+      "statistics": "Statistik",
+      "background": "Hintergrund & Erläuterungen",
+      "imprint": "Impressum",
+      "login": "Login",
+      "logout": "Logout"
+    },
+    "plot": {
+      "threshold": "Schwellenwert",
+      "thresholdLower": "wenig Allergiesymptome zu erwarten (30 Pollen/m³)",
+      "thresholdUpper": "Allergiesymptome zu erwarten (100 Pollen/m³)"
+    }
+  },
+  "dateTimeFormat": {
+    "excel": {
+      "full": "dd.mm.yyyy hh:mm"
+    },
+    "datetime": "DD.MM. HH:mm",
+    "time": "HH:mm",
+    "date": "DD.MM.YYYY"
+  },
+  "page": {
+    "statistics": {
+      "year": "Jahr",
+      "start": "Anfang",
+      "peak": "Peak",
+      "end": "Ende",
+      "sum": "Jahressumme",
+      "noData": "Es liegen keine Daten vor."
+    }
+  },
+  "pollenName": {
+    "Acer": "Ahorn",
+    "Cruciferae": "Kreuzblütler",
+    "Heracleum": "Doldengewächse",
+    "Parietaria": "Glaskräuter",
+    "Pinaceae": "Kieferngewächse",
+    "Triticum": "Weizen",
+    "Zea mays": "Mais",
+    "Abies": "Tanne",
+    "Aesculus": "Rosskastanie",
+    "Alnus": "Erle",
+    "Alternaria": "Alternaria",
+    "Ambrosia": "Ambrosia",
+    "Artemisia": "Beifuss",
+    "Asteraceae": "Korbblütler",
+    "Betula": "Birke",
+    "Brassica": "Raps",
+    "Carpinus": "Hainbuche",
+    "Castanea": "Kastanie",
+    "Chenopodium": "Gänsefuß",
+    "Corylus": "Hasel",
+    "Cyperaceae": "Sauergräser",
+    "Erica": "Heidekraut",
+    "Fagus": "Buche",
+    "Fraxinus": "Esche",
+    "Fungus": "Schimmel",
+    "Galium": "Labkräuter",
+    "Glomerorum": "Schimmelspore",
+    "Humulus": "Hopfen",
+    "Impatiens": "Springkraut",
+    "Juglans": "Walnuss",
+    "Juniperus": "Wachholder",
+    "Larix": "Lärche",
+    "Mercurialis": "Bingelkraut",
+    "Picea": "Fichte",
+    "Pinus": "Kiefer",
+    "Plantago": "Wegerich",
+    "Platanus": "Platane",
+    "Poaceae": "Gräser",
+    "Populus": "Pappel",
+    "Quercus": "Eiche",
+    "Quercus ilex": "Steineiche",
+    "Rumex": "Ampfer",
+    "Salix": "Weide",
+    "Sambucus": "Holunder",
+    "Secale": "Roggen",
+    "Solidago": "Goldrute",
+    "Taraxacum": "Löwenzahn",
+    "Taxus": "Eibe",
+    "Tilia": "Linde",
+    "Ulmus": "Ulme",
+    "Urtica": "Brennnessel",
+    "Varia": "Varia"
+  },
+  "concentrations": "Pollenkonzentrationen",
+  "from": "von",
+  "to": "bis",
+  "unit": "Pollen/m³",
+  "pollen": "Pollen",
+  "location": "Ort",
+  "timeRange": "Zeitraum",
+  "month": "Monat",
+  "months": "Monate",
+  "display": "Anzeige",
+  "today": "heute",
+  "selectArea": "Ausschnitt wählen",
+  "moveTimeAxis": "Zeitachse verschieben",
+  "resetView": "Ansicht zurücksetzen",
+  "download": "angezeigte Daten herunterladen",
+  "lastMonth": "letzter Monat",
+  "apply": "Anwenden"
+}

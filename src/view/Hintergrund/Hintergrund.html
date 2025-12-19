@@ -1,0 +1,227 @@
+<page-layout>
+
+<span v-if="$i18n.locale == 'de'">
+    <h1>Erläuterungen zur Seite pollenscience.eu</h1>
+    <p>Anliegen von Pollen Science ist es, die Daten verschiedener Messnetze und -stationen zum Pollenflug in einer
+        Datenbank zu sammeln und grafisch darzustellen. Somit lässt sich einfach und interaktiv ermitteln, wann wo wie
+        viele Pollen der verschiedenen Spezies in der Luft aktuell gemessen werden bzw. in der Vergangenheit gemessen
+        wurden. </p>
+    <p>Derzeit enthält die Datenbank die Werte von 13 automatischen Pollen Monitore vom Typ BAA500 der Firma Helmut 
+        Hund GmbH aus Wetzlar, und 5 manuellen Pollenfallen (Hirst-typ). Ziel ist es, diesen
+        Datenaustausch schrittweise zu ergänzen durch möglichst viele weitere Pollenmessstationen in Europa. Betreiber
+        von Messstationen oder -netzwerken, die ihre Daten in diesem Rahmen zur Verfügung stellen möchten, mögen sich
+        bitte wenden an Prof. Buters, e-Mail buters@tum.de.</p>
+    <p>Die 8 automatischen Messstationen in Bayern (an den Standorten Altötting, Feucht, Garmisch-Partenkirchen, Hof,
+        Marktheidenfeld, Mindelheim, München und Viechtach) werden betrieben vom Bayerischen Landesamt für Gesundheit
+        und Lebensmittelsicherheit (LGL). Die fünf manuellen Messstationen an den Standorten Bamberg 1 und 2, Oberjoch
+        in Pfronten, Münnerstadt, und am Schneefernerhaus auf der Zugspitze werden betrieben durch das ZAUM- Zentrum
+        Allergie & Umwelt der Technische Universität München/Helmholtzzentrum München oder die Stiftung Deutscher
+        Polleninformationsdienst. Beide Systeme werden finanziert durch das Bayerische Staatsministerium für Gesundheit
+        und Pflege (StMGP) und das Bayerische Staatsministerium für Umwelt und Verbraucherschutz (StMUV).</p>
+    <p>Die Betreiber von weiteren fünf automatischen Messstationen sind:
+    </p>
+    <ul>
+        <li>In Leipzig: Prof. Dr. med. Jan C. Simon und Prof. Dr. R. Treudler, Universitätsklinikum Leipzig</li>
+        <li>In Wiesbaden: Prof. Dr. med. Ludger Klimek, Zentrum für Rhinologie und Allergologie</li>
+        <li>In Berlin: Stiftung Deutscher Polleninformationsdienst (PID)</li>
+        <li>In Wetzlar: Helmut Hund GmbH</li>
+        <li>In Payerne (CH): Federal Office of Meteorology and Climatology MeteoSwiss, Kontakt Dr. Bernard Clot,
+            MeteoSwiss</li>
+    </ul>
+
+    <p>Nachfolgend noch einige ergänzende Hinweise und Informationen zu den Standorten und Daten.</p>
+    <h1>Ergänzende Hinweise und Informationen zu den Standorten und Daten</h1>
+    <h2>Zu den automatischen Pollenmonitoren in Bayern</h2>
+    <p>Die Standorte für die acht automatischen Pollenmonitore wurden in einem aufwändigen Verfahren gezielt festgelegt, um die verschiedenen Pollenflugzonen in Bayern möglichst repräsentativ zu berücksichtigen (1, 2).</p>
+    <p>Diese Geräte wurden von der Hund GmbH in Wetzlar entwickelt. Sie arbeiten autonom und liefern alle drei Stunden aktuelle Pollenzahlen, welche per automatischer Bilderkennung (engl. „image recognition“) ermittelt werden (3).</p>
+    <p><b>Wer wissen möchte, aufgrund welcher Bilder welche Pollen gezählt wurden, kann sich diese Daten unter https://validation.pollenscience.eu anschauen (Anmeldung als Benutzer „Gast“ mit dem Passwort „ePIN-ZAUM“).</b> Falls jemand dabei feststellt, dass ein Pollenmonitor falsch gezählt hat, sind wir für jeden konkreten Hinweis an buters@tum.de dankbar.</p>
+
+    <h2>Zu den Diagrammen</h2>
+    <p>Die Daten zum Pollenflug der verschiedenen Spezies werden in der Einheit „Anzahl Pollen pro Kubikmeter Luft“ angegeben.</p>
+    <p>Die grün-gestrichelte Linie (30 Pollen/m3) gibt an, dass Pollenkonzentrationen oberhalb dieses Wertes generell zu Symptomen führen können (Minimalschwelle). Selbstverständlich ist diese Symptomschwelle von der Pollenart abhängig und variiert auch zwischen den betroffenen Individuen. Sie stellt also lediglich einen Orientierungswert dar: Oberhalb dieses Wertes ist es immer wahrscheinlicher, dass Allergie-Symptome hervorgerufen werden, falls eine Person allergisch auf diese Pollenart ist (4, 5).</p>
+    <p>Die rot-gestrichelte Linie (100 Pollen/m3) hat folgende Bedeutung. Ab diesem Wert haben die meisten sensibilisierten Personen Symptome. Natürlich ist auch diese Schwelle von Person zu Person und Pollenart zu Pollenart unterschiedlich, ist also lediglich ein Orientierungswert.</p>
+
+    <h2>Zur Granularität und Aktualität der Daten</h2>
+    <p>Abhängig von den Messstationen sind die Daten in verschiedener zeitlicher Auflösung verfügbar. Die automatischen Messstationen liefern (mit einer Verzögerung von 4 bis 5 Stunden) pro Tag 8 Mittelwerte für den Pollenflug über jeweils 3 Stunden. Bei den manuellen Stationen in München und Oberjoch wird nur einmal pro Tag der Durchschnittswert für den Pollenflug ermittelt, bei den beiden Stationen in Bamberg werden zweimal pro Tag die Durchschnittswerte für jeweils 12 Stunden ermittelt.</p>
+    <p>Unter dem Menüpunkt „Aktuelle Daten“ werden die 3-Stunden-Mittelwerte der automatischen Messstationen sowie die 12-Stunden-Mittelwerte der beiden (manuellen) Stationen in Bamberg gezeigt, für einen (einzustellenden) Zeitraum von maximal 18 Monaten in die Vergangenheit (Der voreingestellte Zeitraum ist 1 Monat). Hier ist bei den Daten mit der 3-Stunden-Auflösung deutlich zu erkennen, dass der Pollenflug während des Tages variiert und meist morgens zwischen 6 und 9 Uhr am niedrigsten ist</p>
+    <p>Unter dem Menüpunkt „Historische Daten“ werden nur Tageswerte (d. h. die Durchschnittswerte des Pollenfluges pro Spezies in Pollenanzahl pro Kubikmeter über 24 Stunden) angezeigt, maximal bis zu 10 Jahre in die Vergangenheit.</p>
+    <p>Unter dem Menüpunkt „Statistik“ zu einem Ort und zu einer Pollenart wird jeweils Anfang, Höhepunkt und Ende des Pollenfluges gezeigt sowie die insgesamt in diesem Jahr gezählte Pollenanzahl pro Kubikmeter. Dies ermöglicht speziell den Vergleich zwischen den Jahren, z. B. für Fragen wie „Ist in diesem Jahr der Pollenflug sehr früh dran, oder besonders heftig oder milde?“. Da die automatischen Messtationen alle erst in 2019 in Betrieb gegangen sind, stehen Jahreswerte für die Jahre vor 2019 nur für die 5 manuellen Stationen zur Verfügung.</p>
+    <p>Die Seite wurde entwickelt durch Prof. Dr. J. Buters, Dr. Jesus Rojo, Dr. Jose Oteros und in der heutigen Form programmiert durch Robert Gebauer.</p>
+
+    <h2>Literatur</h2>
+    <p>1. Oteros J, Sofiev M, Smith M, et al. Building an automatic Pollen Monitoring Network (ePIN): Selection of optimal stations by clustering pollen zones. Science Tot environ. 2019;688:1263-1274.</p>
+    <p>2. Oteros J, Weber A, Kutzora S, et al. An operational robotic pollen monitoring network based on automatic image recognition. . Allergy. 2020;in review.</p>
+    <p>3. Oteros-Moreno J, Pusch G, Weichenmeier I, et al. Automatic and on-line pollen monitoring. Int Arch Allergy Clin Immunol. 2015;167:158-166.</p>
+    <p>4. de Weger L, Dahl A, Bergmann K, et al. Impact of pollen. In: Bergman CK, Sofiev M, eds.: Allergenic pollen. Heidelberg: Springer; 2012.</p>
+    <p>5. Durham SR, Nelson HS, Nolte H, et al. Magnitude of efficacy measurements in grass allergy immunotherapy trials is highly dependent on pollen exposure. Allergy. 2014;69(5):617-623.</p>
+</span>
+
+<span v-if="$i18n.locale == 'fr'">
+    <h1>Explications sur le site pollenscience.eu</h1>
+    <p>L'objectif de Pollen Science est de rassembler dans une base de données les données de différents réseaux et stations de mesure du pollen et de les présenter sous forme graphique. Il est ainsi possible de déterminer de manière simple et interactive quand, où et combien de pollens des différentes espèces sont actuellement mesurés dans l'air ou l'ont été dans le passé. </p>
+    <p>Actuellement, la base de données contient les valeurs de 13 moniteurs automatiques de pollen de type BAA500 de la société Helmut Hund GmbH de Wetzlar, et de 5 capteurs de pollen manuels (type Hirst). L'objectif est de compléter progressivement cet échange de données par le plus grand nombre possible d'autres stations de mesure de pollen en Europe. Les exploitants de stations ou de réseaux de mesure qui souhaitent mettre leurs données à disposition dans ce cadre sont priés de s'adresser au professeur Buters, e-Mail buters@tum.de.</p>
+    <p>Les huit stations de mesure automatiques en Bavière (à Altötting, Feucht, Garmisch-Partenkirchen, Hof, Marktheidenfeld, Mindelheim, Munich et Viechtach) sont gérées par l'Office bavarois de la santé et de la sécurité alimentaire (LGL). Les cinq stations de mesure manuelles situées à Bamberg 1 et 2, Oberjoch à Pfronten, Münnerstadt et Schneefernerhaus sur la Zugspitze sont gérées par le ZAUM- Zentrum Allergie & Umwelt de l'Université technique de Munich/Helmholtzzentrum München ou par la fondation Deutscher Polleninformationsdienst. Les deux systêmes sont financés par le ministère bavarois de la santé et des soins (StMGP) et le ministère bavarois de l'environnement et de la protection des consommateurs (StMUV).</p>
+    <p>Les exploitants de cinq autres stations de mesure automatiques sont:
+    </p>
+    <ul>
+        <li>A Leipzig : Prof. Jan C. Simon et Prof. R. Treudler, Clinique universitaire de Leipzig</li>
+        <li>A Wiesbaden : Ludger Klimek, Centre de rhinologie et d'allergologie.</li>
+        <li>A Berlin : Fondation Deutscher Polleninformationsdienst (PID)</li>
+        <li>A Wetzlar : Helmut Hund GmbH</li>
+        <li>A Payerne (CH) : Federal Office of Meteorology and Climatology MeteoSwiss, contact Dr. Bernard Clot, MeteoSwiss</li>
+    </ul>
+
+    <p>Ci-dessous, quelques remarques et informations complémentaires sur les sites et les données.</p>
+    <h1>Remarques et informations complémentaires sur les sites et les données</h1>
+    <h2>Concernant les moniteurs automatiques de pollen en Bavière</h2>
+    <p>Les emplacements des huit moniteurs automatiques de pollen ont été déterminés de manière ciblée au cours d'une procédure complexe afin de prendre en compte de la manière la plus représentative possible les différentes zones de pollinisation en Bavière (1, 2).</p>
+    <p>Ces appareils ont été développés par la société Hund GmbH de Wetzlar. Ils fonctionnent de manière autonome et fournissent toutes les trois heures les chiffres actuels du pollen, qui sont déterminés par reconnaissance automatique d'images ("image recognition" en anglais) (3).</p>
+    <p><b>Les personnes qui souhaitent savoir quels pollens ont été comptés sur la base de quelles images peuvent consulter ces données sur https://validation.pollenscience.eu (connexion en tant qu'utilisateur "invité" avec le mot de passe "ePIN-ZAUM").</b> Si quelqu'un constate qu'un moniteur de pollen a mal compté, nous sommes reconnaissants pour toute indication concrète à buters@tum.de.</p>
+
+    <h2>A propos des diagrammes</h2>
+    <p>Les données sur le pollen des différentes espèces sont exprimées en "nombre de grains de pollen par mètre cube d'air".</p>
+    <p>La ligne verte en pointillés (30 pollens/m3) indique que les concentrations de pollens supérieures à cette valeur peuvent généralement provoquer des symptômes (seuil minimal). Bien entendu, ce seuil de symptômes dépend du type de pollen et varie également entre les individus concernés. Il ne s'agit donc que d'une valeur indicative : au-delà de cette valeur, il est toujours plus probable que des symptômes d'allergie soient provoqués si une personne est allergique à ce type de pollen (4, 5).</p>
+    <p>La ligne rouge en pointillés (100 pollens/m3) a la signification suivante. A partir de cette valeur, la plupart des personnes sensibilisées présentent des symptômes. Bien entendu, ce seuil varie également d'une personne à l'autre et d'un type de pollen à l'autre, il ne s'agit donc que d'une valeur indicative.</p>
+
+    <h2>Granularité et actualité des données</h2>
+    <p>En fonction des stations de mesure, les données sont disponibles à différentes résolutions temporelles. Les stations de mesure automatiques fournissent (avec un retard de 4 à 5 heures) 8 valeurs moyennes par jour pour le pollen sur 3 heures. Pour les stations manuelles de Munich et d'Oberjoch, la valeur moyenne pour le pollen n'est calculée qu'une fois par jour, tandis que pour les deux stations de Bamberg, les valeurs moyennes sont calculées deux fois par jour pour 12 heures chacune.</p>
+    <p>Sous l'option de menu "Données actuelles", les moyennes sur 3 heures des stations de mesure automatiques ainsi que les moyennes sur 12 heures des deux stations (manuelles) de Bamberg sont affichées, avec une antériorité (à régler) de 18 mois maximum (la période prédéfinie est de 1 mois). Les données avec une résolution de 3 heures montrent clairement que la quantité de pollen varie au cours de la journée et qu'elle est généralement la plus faible le matin entre 6 et 9 heures.</p>
+    <p>Sous l'option de menu "Données historiques", seules les valeurs journalières (c'est-à-dire les valeurs moyennes des flux de pollen par espèce en nombre de grains de pollen par mètre cube sur 24 heures) sont affichées, avec une antériorité maximum de 10 ans.</p>
+    <p>L'option "Statistiques" d'un lieu et d'une espèce de pollen indique le début, le pic et la fin de la saison pollinique, ainsi que le nombre total de grains de pollen par mètre cube pour cette année. Cela permet en particulier de comparer les années entre elles, par exemple pour répondre à des questions telles que "Cette année, le pollen est-il très précoce, ou particulièrement important ou faible ? Comme les stations de mesure automatiques n'ont pas toutes été mises en service avant 2019, les valeurs annuelles pour les années antérieures à 2019 ne sont disponibles que pour les 5 stations manuelles.</p>
+    <p>Le site a été développé par le Prof. Dr J. Buters, le Dr Jesus Rojo, le Dr Jose Oteros et programmé dans sa forme actuelle par Robert Gebauer.</p>
+
+    <h2>Références bibliographiques</h2>
+    <p>1. Oteros J, Sofiev M, Smith M, et al. Building an automatic Pollen Monitoring Network (ePIN): Selection of optimal stations by clustering pollen zones. Science Tot environ. 2019;688:1263-1274.</p>
+    <p>2. Oteros J, Weber A, Kutzora S, et al. An operational robotic pollen monitoring network based on automatic image recognition. . Allergy. 2020;in review.</p>
+    <p>3. Oteros-Moreno J, Pusch G, Weichenmeier I, et al. Automatic and on-line pollen monitoring. Int Arch Allergy Clin Immunol. 2015;167:158-166.</p>
+    <p>4. de Weger L, Dahl A, Bergmann K, et al. Impact of pollen. In: Bergman CK, Sofiev M, eds.: Allergenic pollen. Heidelberg: Springer; 2012.</p>
+    <p>5. Durham SR, Nelson HS, Nolte H, et al. Magnitude of efficacy measurements in grass allergy immunotherapy trials is highly dependent on pollen exposure. Allergy. 2014;69(5):617-623.</p>
+</span>
+
+<span v-if="$i18n.locale == 'en'">
+    <h1>Explanation of the page pollenscience.eu</h1>
+    <p>The aim of Pollen Science is to collect and graphically display the data of different pollen measurement networks and stations. It can therefore be easily and interactively determined when, where, and how much pollen of the different species is currently measured in the air or has been measured in the past. </p>
+    <p>The database currently contains the values of automatic BAA500 Helmut Hund GmbH (Wetzler , Germany) pollen monitors, and manual Hirst-type pollen traps. The aim is to gradually supplement these data with as many additional pollen measuring stations in Europe as possible. Operators of measuring stations or networks who would like to make their data available for this database are requested to contact Prof. Jeroen Buters, Head of ZAUM Group Environment (e-mail: buters@tum.de).</p>
+    <p>The 8 automatic measuring stations in Bavaria (at the sites Altötting, Feucht, Garmisch-Partenkirchen, Hof, Marktheidenfeld, Mindelheim, Munich and Viechtach) are operated by the Bavarian State Office for Health and Food Safety (LGL). The manual measuring stations are operated by the ZAUM- Center Allergy & Environment of the Technical University of Munich/Helmholtzzentrum München or the German Pollen Information Service Foundation, and are located at Bamberg 2, Oberjoch in Pfronten, Münnerstadt, and at Schneefernerhaus on the Zugspitze. Both systems are financed by the Bavarian State Ministry for Health and Care (StMGP) and the Bavarian State Ministry for the Environment and Consumer Protection (StMUV).</p>
+    <p>The operators of a further five automatic measuring stations are:
+    </p>
+    <ul>
+        <li>Leipzig: Prof. Dr. med. Jan C. Simon and Prof. Dr. R. Treudler, Leipzig University Hospital</li>
+        <li>Wiesbaden: Prof. Dr. med. Ludger Klimek, Center for Rhinology and Allergology</li>
+        <li>Berlin: Foundation German Pollen Information Service (PID)</li>
+        <li>Wetzlar (Germany): Helmut Hund GmbH</li>
+        <li>Payerne (CH): Federal Office of Meteorology and Climatology MeteoSwiss, contact Dr. Bernard Clot, MeteoSwiss</li>
+    </ul>
+
+    
+    <h1>Supplementary notes and information on the sites and data</h1>
+    <h2>About the automatic pollen monitors in Bavaria</h2>
+    <p>The locations of the eight automatic pollen monitoring stations take into account the different pollen flight zones in Bavaria as representatively as possible (1, 2).</p>
+    <p>These devices were developed by Hund GmbH in Wetzlar. They work autonomously and deliver current airborne pollen concentrations every three hours, which are determined by automatic image recognition (3).</p>
+    <p><b>Anyone who wants to know which images contributed to a particular pollen count can view these data at https://validation.pollenscience.eu (if needed, log in as user "Guest" with the password "ePIN-ZAUM").</b> Please let us know if you think a pollen monitor has made a wrong identification, as it will help us improve the data we provide in the future (send to buters@tum.de).</p>
+
+    <h2>About the diagrams</h2>
+    <p>The pollen count data of the different species are given in the unit "number of pollen per cubic meter of air (pollen/m3)".</p>
+    <p>The green dashed line (30 pollen/m3) indicates that pollen concentrations above this value can generally lead to symptoms (minimum threshold). Of course, this symptom threshold depends on the pollen type and also varies between affected individuals. It is therefore only an orientation value: Above this value, it is always more likely to cause allergy symptoms if an individual is allergic to that pollen species (4, 5).</p>
+    <p>Above the red dashed line (100 pollen/m3), most sensitized persons will experience symptoms. Of course, this threshold also varies from person to person and from pollen type to pollen type, so it is only an orientation value.</p>
+
+    <h2>The resolution and timeliness of the data</h2>
+    <p>The data are available in different temporal resolutions, depending on the measuring stations. The automatic measuring stations provide  8 average values per day for the pollen count (averaged over 3-hours) with a delay of 4 to 5 hours. At the manual stations in Munich and Oberjoch the average value for the pollen count is determined only once per day. Whereas for the two manual stations in Bamberg, the average values are determined twice per day for 12 hours each.</p>
+    <p>Under the menu item "Current data" the 3-hour average values from the automatic measuring stations, as well as the 12-hour average values from the two manual stations in Bamberg, are shown for a maximum period of 18 months into the past. Note that the preset period is 1 month, and the maximum period needs to be set manually. The data with 3-hour temporal resolution clearly show that pollen concentrations vary during the day and are usually lowest in the morning between 6 and 9 a.m.</p>
+    <p>Under the menu item "Historical data" only daily values are displayed (i.e. the average pollen concentration per species, presented as pollen per cubic meter of air, over 24 hours), up to a maximum of 10 years into the past.</p>
+    <p>Under the menu item "Statistics" for a location and a pollen species, the beginning, peak and end of the pollen season is shown, as well as the total number of pollen per cubic meter of air counted in this year. This allows the comparison between years, e.g. for questions like "Is this year's pollen count very early, or particularly heavy or mild?". Since all the automatic measuring stations went into operation in 2019, annual values for the years before 2019 are only available for the 5 manual stations.</p>
+    <p>The site was developed by Prof. Dr. J. Buters, Dr. Jesus Rojo, Dr. Jose Oteros and programmed in its current form by Robert Gebauer.</p>
+
+    <h2>Literature</h2>
+    <p>1. Oteros J, Sofiev M, Smith M, et al. Building an automatic Pollen Monitoring Network (ePIN): Selection of optimal stations by clustering pollen zones. Science Tot environ. 2019;688:1263-1274.</p>
+    <p>2. Oteros J, Weber A, Kutzora S, et al. An operational robotic pollen monitoring network based on automatic image recognition. . Allergy. 2020;in review.</p>
+    <p>3. Oteros-Moreno J, Pusch G, Weichenmeier I, et al. Automatic and on-line pollen monitoring. Int Arch Allergy Clin Immunol. 2015;167:158-166.</p>
+    <p>4. de Weger L, Dahl A, Bergmann K, et al. Impact of pollen. In: Bergman CK, Sofiev M, eds.: Allergenic pollen. Heidelberg: Springer; 2012.</p>
+    <p>5. Durham SR, Nelson HS, Nolte H, et al. Magnitude of efficacy measurements in grass allergy immunotherapy trials is highly dependent on pollen exposure. Allergy. 2014;69(5):617-623.</p>
+</span>
+
+<span v-if="$i18n.locale == 'nl'">
+    <h1>Uitleg van de pagina pollenscience.eu</h1>
+    <p>Het doel van Pollen Science is het verzamelen en grafisch weergeven van gegevens van verschillende pollenmeetnetten en -stations in een database. Op deze manier kan eenvoudig en interactief worden bepaald wanneer, waar en hoeveel pollen van de verschillende soorten momenteel in de lucht worden gemeten of in het verleden zijn gemeten. </p>
+    <p>Momenteel bevat de database de waarden van automatische pollenmonitoren van het type BAA500 van de firma Helmut Hund GmbH uit Wetzlar, en 4 handmatige pollenvallen (type Hirst). Het is de bedoeling deze gegevensuitwisseling geleidelijk aan te vullen met zoveel mogelijk andere pollenmeetstations in Europa. Exploitanten van meetstations of -netwerken die hun gegevens in dit kader beschikbaar willen stellen, kunnen contact opnemen met prof. Buters, e-mail buters@tum.de.</p>
+    <p>De 8 automatische meetstations in Beieren (op de locaties Altötting, Feucht, Garmisch-Partenkirchen, Hof, Marktheidenfeld, Mindelheim, München en Viechtach) worden beheerd door het Beierse Staatsbureau voor Gezondheid en Voedselveiligheid (LGL). De handmatige meetstations op de locaties Bamberg 2, Oberjoch in Pfronten, Münnerstadt en in het Schneefernerhaus op de Zugspitze worden beheerd door het ZAUM- Zentrum Allergie & Umwelt der Technische Universität München/Helmholtzzentrum München of de Stiftung Deutscher Polleninformationsdienst. Beide systemen worden gefinancierd door het Beierse Staatsministerie voor Gezondheid en Zorg (StMGP) en het Beierse Staatsministerie voor Milieu en Consumentenbescherming (StMUV).</p>
+    <p>De exploitanten van sommige automatische meetstations zijn:
+    </p>
+    <ul>
+        <li>In Leipzig: Prof. Dr. med. Jan C. Simon en Prof. Dr. R. Treudler, Universitair Ziekenhuis Leipzig</li>
+        <li>In Wiesbaden: Prof. Dr. med. Ludger Klimek, Centrum voor Rhinologie en Allergologie</li>
+        <li>In Berlijn: Stichting Duitse Polleninformatiedienst (PID)</li>
+        <li>In Wetzlar: Helmut Hund GmbH</li>
+        <li>In Payerne (CH): Federal Office of Meteorology and Climatology MeteoSwiss, benader Dr. Bernard Clot, MeteoSwiss</li>
+    </ul>
+
+
+    <h1>Hieronder volgen enkele aanvullende opmerkingen en informatie over de locaties en gegevens</h1>
+    <h2>Aanvullende opmerkingen en informatie over de locaties en gegevens</h2>
+    <p>Door middel van een complexe procedure werden locaties bepaald die zo representatief mogelijk zijn voor de verschillende pollenvluchtzones in Beieren (1, 2).</p>
+    <p>De automatische pollenmonitoren  zijn ontwikkeld door Hund GmbH in Wetzlar. Zij werken autonoom en leveren om de drie uur actuele pollentellingen, waarbij de verschillende pollensoorten worden herkend door automatische beeldherkenning (3).</p>
+    <p><b>Wie het  beeld wilt zien waarop een bepaalde  pollentellingen gebaseerd is, kan deze beelden bekijken op https://validation.pollenscience.eu (inloggen als gebruiker "Gast" met het wachtwoord "ePIN-ZAUM").</b> Als u daar opmerkt dat een pollenmonitor een pollenkorrel verkeerd heeft herkend, zouden wij het zeer waarderen als u contact met ons opneemt: buters@tum.de.</p>
+
+    <h2>Over de diagrammen</h2>
+    <p>De gegevens over het aantal pollen van de verschillende soorten worden gegeven in de eenheid "aantal pollen per kubieke meter lucht".</p>
+    <p>De groene stippellijn (30 pollen/m3) geeft aan dat pollenconcentraties boven deze waarde tot symptomen kunnen leiden (minimumdrempel) in personen, die allergisch zijn voor die pollensoort,. Uiteraard hangt deze symptoomdrempel af van het soort stuifmeel en verschilt hij ook van persoon tot persoon. Het is dus slechts een oriëntatiewaarde: Boven deze waarde is de kans op allergiesymptomen nog groter (4, 5).</p>
+    <p>De rode stippellijn (100 pollen/m3) heeft de volgende betekenis. Boven deze waarde hebben de meeste gesensibiliseerde personen symptomen. Uiteraard varieert deze drempel ook van persoon tot persoon en van stuifmeelsoort tot stuifmeelsoort, dus het is slechts een oriëntatiewaarde.</p>
+
+    <h2>Over de granulariteit en actualiteit van de gegevens</h2>
+    <p>Afhankelijk van de meetstations zijn de gegevens beschikbaar in verschillende temporele resoluties. De automatische meetstations leveren (met een vertraging van 4 tot 5 uur) het gemiddeld aantal pollen in een tijdvak van 3 uur; dat levert dus 8 gemiddelde waarden per dag op. In de manuele stations in München en Oberjoch wordt de gemiddelde waarde van het pollengetal slechts eenmaal per dag bepaald; in de twee stations in Bamberg worden de gemiddelde waarden tweemaal per dag gedurende telkens 12 uur bepaald.</p>
+    <p>Onder het menupunt "Actuele gegevens" worden de 3-uurgemiddelden van de automatische meetstations en de 12-uurgemiddelden van de twee (handmatige) stations in Bamberg getoond, voor een (in te stellen) periode van maximaal 18 maanden in het verleden (de vooraf ingestelde periode is 1 maand). Hier is in de gegevens met de resolutie van 3 uur duidelijk te zien dat het pollenaantal in de loop van de dag varieert en 's morgens tussen 6 en 9 uur meestal het laagst is.</p>
+    <p>Onder het menu-item "Historische gegevens" worden alleen dagwaarden (d.w.z. het gemiddelde aantal pollen per soort in pollen per kubieke meter over 24 uur) weergegeven, tot maximaal 10 jaar in het verleden.</p>
+    <p>Het menu-item "Statistieken" toont het begin, de piek en het einde van de pollentelling voor een locatie en een pollensoort, alsmede het totale aantal pollen per kubieke meter dat in dit jaar is geteld. Dit maakt het mogelijk vergelijkingen te maken tussen jaren, bijvoorbeeld voor vragen als "Is de hoeveelheid pollen dit jaar erg vroeg, of bijzonder zwaar of mild? Aangezien de automatische meetstations allemaal pas in 2019 in gebruik zijn genomen, zijn de jaarwaarden van de jaren vóór 2019 alleen beschikbaar voor de 5 handmatige stations.</p>
+    <p>De site is ontwikkeld door Prof. Dr. J. Buters, Dr. Jesus Rojo, Dr. Jose Oteros en in zijn huidige vorm geprogrammeerd door Robert Gebauer.</p>
+
+    <h2>Literatuur</h2>
+    <p>1. Oteros J, Sofiev M, Smith M, et al. Building an automatic Pollen Monitoring Network (ePIN): Selection of optimal stations by clustering pollen zones. Science Tot environ. 2019;688:1263-1274.</p>
+    <p>2. Oteros J, Weber A, Kutzora S, et al. An operational robotic pollen monitoring network based on automatic image recognition. . Allergy. 2020;in review.</p>
+    <p>3. Oteros-Moreno J, Pusch G, Weichenmeier I, et al. Automatic and on-line pollen monitoring. Int Arch Allergy Clin Immunol. 2015;167:158-166.</p>
+    <p>4. de Weger L, Dahl A, Bergmann K, et al. Impact of pollen. In: Bergman CK, Sofiev M, eds.: Allergenic pollen. Heidelberg: Springer; 2012.</p>
+    <p>5. Durham SR, Nelson HS, Nolte H, et al. Magnitude of efficacy measurements in grass allergy immunotherapy trials is highly dependent on pollen exposure. Allergy. 2014;69(5):617-623.</p>
+</span>
+
+<span v-if="$i18n.locale == 'es'">
+    <h1>Explicación de la página pollenscience.eu</h1>
+    <p>El objetivo de Pollen Science es recoger y mostrar gráficamente en una base de datos los datos procedentes de diversas redes y estaciones de medición de polen. De este modo, es posible determinar fácilmente y de forma interactiva cuándo y dónde se está midiendo actualmente la cantidad de polen de las distintas especies en el aire o el que se ha medido en el pasado. </p>
+    <p>Actualmente, la base de datos contiene los valores de monitores de polen automáticos del tipo BAA500 de la empresa Helmut Hund GmbH de Wetzlar, y captadores de polen manuales (tipo Hirst). Los operadores de estaciones o redes de medición que deseen poner sus datos a disposición en este marco deben ponerse en contacto con el profesor Buters, correo electrónico buters@tum.de.</p>
+    <p>Las 8 estaciones de medición automáticas de Baviera (en las localidades de Altötting, Feucht, Garmisch-Partenkirchen, Hof, Marktheidenfeld, Mindelheim, Múnich y Viechtach) son gestionadas por la Oficina Estatal de Salud y Seguridad Alimentaria de Baviera (LGL). Las estaciones de medición manual situadas en las localidades de Bamberg 2, Oberjoch en Pfronten, Münnerstadt y en Schneefernerhaus en el Zugspitze son operadas por el ZAUM- Zentrum Allergie & Umwelt der Technische Universität München/Helmholtzzentrum München o la Stiftung Deutscher Polleninformationsdienst. Ambos sistemas están financiados por el Ministerio de Sanidad y Asistencia del Estado de Baviera (StMGP) y el Ministerio de Medio Ambiente y Protección del Consumidor del Estado de Baviera (StMUV).</p>
+    <p>Los operadores de otras estaciones de medición automáticas son:
+    </p>
+    <ul>
+        <li>En Leipzig: Prof. Dr. med. Jan C. Simon y Prof. Dr. R. Treudler, Hospital Universitario de Leipzig</li>
+        <li>En Wiesbaden: Prof. Dr. med. Ludger Klimek, Centro de Rinología y Alergología</li>
+        <li>En Berlín: Fundación Servicio Alemán de Información sobre el Polen (PID)</li>
+        <li>En Wetzlar: Helmut Hund GmbH</li>
+        <li>In Payerne (CH): Federal Office of Meteorology and Climatology MeteoSwiss, contacteer Dr. Bernard Clot, MeteoSwiss</li>
+    </ul>
+
+
+    <h1>A continuación, se incluyen algunas notas adicionales sobre las ubicaciones y los datos</h1>
+    <h2>Notas e información complementaria sobre los lugares y los datos</h2>
+    <p>Las ubicaciones de los ocho monitores automáticos de polen se determinaron mediante un complejo procedimiento para que fueran lo más representativas posible de las diferentes fuentes de emisión y transporte del polen en Baviera (1, 2).</p>
+    <p>Estos dispositivos fueron desarrollados por Hund GmbH en Wetzlar. Funcionan de forma autónoma y ofrecen recuentos actuales de polen cada tres horas, que se determinan mediante el reconocimiento automático de imágenes (3).</p>
+    <p><b>Quien quiera verificar la clasificación de las imágenes puede acceder a las imágenes de cada partícula muestreada en cualquier momento y en cualquier estación automática en https://validation.pollenscience.eu/ (inicie sesión como usuario "Gast" con la contraseña "ePIN-ZAUM").</b> Si alguien se da cuenta de que un monitor de polen ha contado de forma incorrecta, agradeceríamos cualquier información concreta a buters@tum.de.</p>
+
+    <h2>Sobre los gráficos</h2>
+    <p>Los datos sobre el recuento de polen de las diferentes especies se dan en la unidad "número de polen por metro cúbico de aire".</p>
+    <p>La línea verde discontinua muestra un umbral de concentración de 30 granos de polen/m3, un umbral significativo para la presencia de síntomas en numerosos estudios clínicos. Por supuesto, este umbral de síntomas depende del tipo de polen y también varía entre los individuos afectados. Por lo tanto, es sólo un valor de orientación: Por encima de este valor, siempre es más probable que cause síntomas de alergia si una persona es alérgica a ese tipo de polen (4, 5).</p>
+    <p>La línea de puntos roja (100 granos de polen/ m3) tiene el siguiente significado. Por encima de este valor, la mayoría de las personas sensibilizadas presentan síntomas. Por supuesto, este umbral también varía de una persona a otra y de un tipo de polen a otro, por lo que es sólo un valor orientativo.</p>
+
+    <h2>Sobre la resolución y actualidad de los datos</h2>
+    <p>Dependiendo de las estaciones de medición, los datos están disponibles en diferentes resoluciones temporales. Las estaciones de medición automáticas proporcionan 8 valores medios de la concentración polínica durante periodos de 3 horas al día (0h-2h, 3h-5h, 6h-8h, 9h-11h, 12h-14h, 15h-17h, 18h-20h, 21h-23h). En las estaciones manuales tipo Hirst, las concentraciones suelen corresponder a periodos de 24 h (un dato diario), aunque algunas estaciones se analizan con una mayor resolución temporal.</p>
+    <p>En la opción de menú "Datos actuales" se muestran las concentraciones registradas más recientemente en cada estación.</p>
+    <p>En la opción de menú "Datos históricos" sólo se muestran los valores de concentraciones diarias, hasta un máximo de 10 años en el pasado.</p>
+    <p>La opción de menú "Estadísticas" muestra el inicio, el pico y el final del recuento de polen para un lugar y una especie de polen, así como el número total de polen por metro cúbico contado en ese año. Esto permite hacer comparaciones entre años, por ejemplo, para preguntas como "¿es el recuento de polen muy temprano este año, o particularmente abundante? Como las estaciones de medición automáticas no entraron en funcionamiento hasta 2019, los valores anuales de los años anteriores a 2019 solo están disponibles para algunas estaciones manuales.</p>
+    <p>El sitio fue desarrollado por el Prof. Dr. J. Buters, el Dr. Jesús Rojo, el Dr. José Oteros y programado en su forma actual por Robert Gebauer.</p>
+
+    <h2>Literatura</h2>
+    <p>1. Oteros J, Sofiev M, Smith M, et al. Building an automatic Pollen Monitoring Network (ePIN): Selection of optimal stations by clustering pollen zones. Science Tot environ. 2019;688:1263-1274.</p>
+    <p>2. Oteros J, Weber A, Kutzora S, et al. An operational robotic pollen monitoring network based on automatic image recognition. . Allergy. 2020;in review.</p>
+    <p>3. Oteros-Moreno J, Pusch G, Weichenmeier I, et al. Automatic and on-line pollen monitoring. Int Arch Allergy Clin Immunol. 2015;167:158-166.</p>
+    <p>4. de Weger L, Dahl A, Bergmann K, et al. Impact of pollen. In: Bergman CK, Sofiev M, eds.: Allergenic pollen. Heidelberg: Springer; 2012.</p>
+    <p>5. Durham SR, Nelson HS, Nolte H, et al. Magnitude of efficacy measurements in grass allergy immunotherapy trials is highly dependent on pollen exposure. Allergy. 2014;69(5):617-623.</p>
+</span>
+
+</page-layout>

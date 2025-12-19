@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <script>
+        (function() {
+            var ua = navigator.userAgent.toLowerCase();
+            var isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(ua);
+            if (isMobile && location.hostname === "pollenscience.eu") {
+                location.href = "https://m.pollenscience.eu";
+            }
+        })();
+    </script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="static-assets/zaum.png" sizes="32x32">
+  <title>Pollen Science</title>
+
+  <!-- Font Awesome Pro -->
+  <link href="static-assets/webfonts-css/fontawesome.min.css" rel="stylesheet">
+  <link href="static-assets/webfonts-css/duotone.min.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div id="app">
+  </div>
+</body>
+
+</html>

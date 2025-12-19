@@ -1,0 +1,111 @@
+{
+    "component": {
+        "list": {
+            "selectAll": "select all",
+            "selectPrevious": "select previous"
+        },
+        "nav": {
+            "current": "Current Data",
+            "historic": "Historical Data",
+            "statistics": "Statistics",
+            "background": "Background & Explanations",
+            "imprint": "Impressum",
+            "login": "Login",
+            "logout": "Logout"
+        },
+        "plot": {
+            "threshold": "threshold",
+            "thresholdLower": "few allergy symptoms to expect (30 Pollen/m³)",
+            "thresholdUpper": "allergy symptoms likely (100 Pollen/m³)"
+        }
+    },
+    "dateTimeFormat": {
+        "excel": {
+            "full": "dd.mm.yyyy hh:mm"
+        },
+        "datetime": "DD.MM. HH:mm",
+        "time": "HH:mm",
+        "date": "YYYY-MM-DD"
+    },
+    "page": {
+        "statistics": {
+            "year": "year",
+            "start": "begin",
+            "peak": "peak",
+            "end": "end",
+            "sum": "yearly sum",
+            "noData": "no data."
+        }
+    },
+    "pollenName": {
+        "Acer": "Maple",
+        "Cruciferae": "Crucifers",
+        "Heracleum": "Apiaceae",
+        "Parietaria": "Pellitory",
+        "Pinaceae": "Pine",
+        "Triticum": "Wheat",
+        "Zea mays": "Maize",
+        "Abies": "Fir",
+        "Aesculus": "Horse chestnut",
+        "Alnus": "Alder",
+        "Alternaria": "Alternaria",
+        "Ambrosia": "Ragweed",
+        "Artemisia": "Mugwort",
+        "Asteraceae": "Daisy family",
+        "Betula": "Birch",
+        "Brassica": "Rapeseed",
+        "Carpinus": "Hornbeam",
+        "Castanea": "Chestnut",
+        "Chenopodium": "Goosefoot",
+        "Corylus": "Hazel",
+        "Cyperaceae": "Sedges",
+        "Erica": "Heather",
+        "Fagus": "Beech",
+        "Fraxinus": "Ash",
+        "Fungus": "Mould",
+        "Galium": "Bedstraw",
+        "Glomerorum": "Mould spore",
+        "Humulus": "Hop",
+        "Impatiens": "Impatiens",
+        "Juglans": "Walnut",
+        "Juniperus": "Juniper",
+        "Larix": "Larch",
+        "Mercurialis": "Mercuries",
+        "Picea": "Spruce",
+        "Pinus": "Pine",
+        "Plantago": "Plantains",
+        "Platanus": "Plane tree",
+        "Poaceae": "Grasses",
+        "Populus": "Poplar",
+        "Quercus": "Oak",
+        "Quercus ilex": "Evergreen oak",
+        "Rumex": "Docks",
+        "Salix": "Willow",
+        "Sambucus": "Elder",
+        "Secale": "Rye",
+        "Solidago": "Goldenrods",
+        "Taraxacum": "Dandelion",
+        "Taxus": "Yew",
+        "Tilia": "Lime",
+        "Ulmus": "Elm",
+        "Urtica": "Nettle",
+        "Varia": "Varia"
+    },
+    "concentrations": "Pollen concentration",
+    "from": "from",
+    "to": "to",
+    "unit": "Pollen/m³",
+    "pollen": "Pollen",
+    "location": "location",
+    "timeRange": "time range",
+    "month": "month",
+    "months": "months",
+    "display": "display",
+    "today": "today",
+    "selectArea": "select area",
+    "moveTimeAxis": "move time axis",
+    "resetView": "reset view",
+    "download": "download shown data",
+    "lastMonth": "last month",
+    "apply": "Apply"
+}

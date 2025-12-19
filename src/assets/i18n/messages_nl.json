@@ -1,0 +1,111 @@
+{
+    "component": {
+        "list": {
+            "selectAll": "allemaal",
+            "selectPrevious": "vorige kiezen"
+        },
+        "nav": {
+            "current": "Actuele  data",
+            "historic": "Historische data",
+            "statistics": "Statistiek",
+            "background": "Achtergrond & uitleg",
+            "imprint": "Impressum",
+            "login": "Login",
+            "logout": "Logout"
+        },
+        "plot": {
+            "threshold": "Grenswaarde",
+            "thresholdLower": "weinig Allergiesymptomen te verwachten (30 Pollen/m³)",
+            "thresholdUpper": "Allergiesymptomen te verwachten (100 Pollen/m³)"
+        }
+    },
+    "dateTimeFormat": {
+        "excel": {
+            "full": "dd.mm.yyyy hh:mm"
+        },
+        "datetime": "DD.MM. HH:mm",
+        "time": "HH:mm",
+        "date": "YYYY-MM-DD"
+    },
+    "page": {
+        "statistics": {
+            "year": "Jaar",
+            "start": "Begin",
+            "peak": "Piek",
+            "end": "Einde",
+            "sum": "Jaarsom",
+            "noData": "geen data beschikbaar."
+        }
+    },
+    "pollenName": {
+        "Acer": "Esdoorn",
+        "Cruciferae": "Kruisbloemenfamilie",
+        "Heracleum": "Berenklauw",
+        "Parietaria": "Glaskruid",
+        "Pinaceae": "Dennenfamilie",
+        "Triticum": "Tarwe",
+        "Zea mays": "Mais",
+        "Abies": "Zilverspar",
+        "Aesculus": "Kastanje",
+        "Alnus": "Els",
+        "Alternaria": "Alternaria",
+        "Ambrosia": "Ambrosia",
+        "Artemisia": "Bijvoet",
+        "Asteraceae": "Composietenfamilie",
+        "Betula": "Berk",
+        "Brassica": "Koolzaad",
+        "Carpinus": "Haagbeuk",
+        "Castanea": "Wilde kastanje",
+        "Chenopodium": "Ganzenvoet",
+        "Corylus": "Hazelaar",
+        "Cyperaceae": "Cypergrassenfamilie",
+        "Erica": "Heide",
+        "Fagus": "Beuk",
+        "Fraxinus": "Es",
+        "Fungus": "Schimmel",
+        "Galium": "Lievevrouwebedstro",
+        "Glomerorum": "Schimmelsporen",
+        "Humulus": "Hop",
+        "Impatiens": "Springzaad",
+        "Juglans": "Walnoot",
+        "Juniperus": "Jeneverbes",
+        "Larix": "Lariks",
+        "Mercurialis": "Bingelkruid",
+        "Picea": "Spar",
+        "Pinus": "Den",
+        "Plantago": "Weegbree",
+        "Platanus": "Plataan",
+        "Poaceae": "Gras",
+        "Populus": "Populier",
+        "Quercus": "Eik",
+        "Quercus ilex": "Steeneik",
+        "Rumex": "Zuring",
+        "Salix": "Wilg",
+        "Sambucus": "Vlier",
+        "Secale": "Rogge",
+        "Solidago": "Guldenroede",
+        "Taraxacum": "Paardenbloem",
+        "Taxus": "Taxus",
+        "Tilia": "Linde",
+        "Ulmus": "Iep",
+        "Urtica": "Brandnetel",
+        "Varia": "Varia"
+    },
+    "concentrations": "Pollenconcentratie",
+    "from": "van",
+    "to": "tot",
+    "unit": "Pollen/m³",
+    "pollen": "Pollen",
+    "location": "Plaats",
+    "timeRange": "Periode",
+    "month": "Maand",
+    "months": "Maanden",
+    "display": "Scherm",
+    "today": "Vandaag",
+    "selectArea": "Gedeelte uitzoeken",
+    "moveTimeAxis": "Tijdas verschuiven",
+    "resetView": "oorspronkelijk beeld",
+    "download": "Data downloaden",
+    "lastMonth": "laatste maand",
+    "apply": "Toepassen"
+}

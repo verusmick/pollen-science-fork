@@ -1,0 +1,10 @@
+<div class="plot-container">
+    <div ref="plot" class="plot"></div>
+    <div v-if="loading" class="lds-dual-ring"></div>
+    <div class="plot-legend">
+        <span v-t="'component.plot.threshold'"/>: &nbsp;&nbsp;&nbsp;
+        <i class="fad fa-ellipsis-h-alt green"></i><i class="fad fa-ellipsis-h-alt green"></i><i class="fad fa-ellipsis-h-alt green"></i>&nbsp;&nbsp;<span v-t="'component.plot.thresholdLower'"/>
+        &nbsp;&nbsp;&nbsp;
+        <i class="fad fa-ellipsis-h-alt red"></i><i class="fad fa-ellipsis-h-alt red"></i><i class="fad fa-ellipsis-h-alt red"></i>&nbsp;&nbsp;<span v-t="'component.plot.thresholdUpper'"/>
+    </div>
+</div>

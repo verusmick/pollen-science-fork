@@ -1,0 +1,58 @@
+<page-layout>
+    <div class="d-flex flex-column page-root">
+        <div class="row d-flex flex-row">
+            <div class="col-12 col-md-4">
+                <dropdown :store="locationsStore" :labelProvider="locationsLabelProvider"
+                    v-on:update-selected="updateSelectedLocation" :label="$t('location')" :preselectedId="$defaultLocationId" />
+            </div>
+            <div class="col-12 col-md-4">
+                <dropdown :store="pollenStore" :labelProvider="pollenLabelProvider" :multiselect="true" :sortByProvider="sortByProvider" :filterAllSelection="filterAllPollenSelection"
+                    v-on:update-selected="updateSelectedPollen" v-on:component-mounted="refreshPlot"
+                          :preselectedFunction="getPreSelectedPollen" :label="$t('pollen')" />
+            </div>
+            <div class="col-12 col-md-1 btn-apply">
+                <label>&nbsp;</label><br />
+                <div class="d-flex flex-row align-items-center">
+                    <button v-on:click="refreshPlot"
+                            :class="{ 'btn-success': filterChanged, 'btn-secondary': !filterChanged }" class="btn">
+                        {{$t('apply')}}
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <label>{{ $t('timeRange') }}:</label><br />
+                <div class="d-flex flex-row align-items-center">
+                <input type="range" min="1" :max="maxMonths" class="custom-range" v-on:change="selectedRangeChanged($event)" v-on:input="rangeInSelectionChanged($event)" value="3"/>
+                <span class="ml-3 rangeLabel">{{ rangeInSelection }}&nbsp;{{ rangeInSelection == 1 ? $t('month'): $t('months') }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex flex-row">
+            <div class="col-10 col-md-8">
+                <label v-t="'display'"></label><br />
+                <div class="d-flex flex-row align-items-center">
+                    <button type="button" class="btn btn-primary mr-3" v-on:click="zoomToNow"><i class="fad fa-calendar-times mr-3"></i>{{ $t('today') }}</button>
+                    <div class="btn-group btn-group-toggle mr-3" data-toggle="buttons">
+                        <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option1" autocomplete="off" v-on:click="setZoomMode()" checked><i class="fad fa-object-group mr-3"></i>{{ $t('selectArea') }}
+                        </label>
+                        <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2" autocomplete="off" v-on:click="setPanMode()"><i class="fad fa-arrows-alt-h mr-3"></i>{{ $t('moveTimeAxis') }}
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-warning" v-on:click="refreshPlot()"><i class="fad fa-undo-alt mr-3"></i>{{ $t('resetView') }}</button>
+                </div>
+            </div>
+            <div class="col-2 col-md-4 text-right" v-if="true">
+                <label>&nbsp;</label><br />
+                <a v-if="download" :href="download" :download="filename" class="btn btn-dark"><i class="fad fa-file-excel mr-3"></i>{{ $t('download') }}</a>
+            </div>
+        </div>
+        <div class="row fill mt-2">
+            <div class="col-12">
+                <plot ref="plot"></plot>
+            </div>
+        </div>
+    </div>
+</page-layout>

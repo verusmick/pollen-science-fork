@@ -1,0 +1,111 @@
+{
+    "component": {
+        "list": {
+            "selectAll": "Tout sélectionner",
+            "selectPrevious": "Sélectionner le précédent"
+        },
+        "nav": {
+            "current": "Données actuelles",
+            "historic": "Données historiques",
+            "statistics": "Statistiques",
+            "background": "Contexte et explications",
+            "imprint": "Mentions légales",
+            "login": "Se connecter",
+            "logout": "Se déconnecter"
+        },
+        "plot": {
+            "threshold": "Valeur seuil",
+            "thresholdLower": "Peu de symptômes d'allergie à prévoir (30 Pollen/m³)",
+            "thresholdUpper": "Symptômes d'allergie à prévoir (100 Pollen/m³)"
+        }
+    },
+    "dateTimeFormat": {
+        "excel": {
+            "full": "dd.mm.yyyy hh:mm"
+        },
+        "datetime": "DD.MM. HH:mm",
+        "time": "HH:mm",
+        "date": "YYYY-MM-DD"
+    },
+    "page": {
+        "statistics": {
+            "year": "Année",
+            "start": "Début",
+            "peak": "Pic",
+            "end": "Fin",
+            "sum": "Somme annuelle",
+            "noData": "Aucune données n'est disponible"
+        }
+    },
+    "pollenName": {
+        "Acer": "Erable",
+        "Cruciferae": "Brassicacées",
+        "Heracleum": "Berce",
+        "Parietaria": "Pariétaire",
+        "Pinaceae": "Pinacées",
+        "Triticum": "Blé",
+        "Zea mays": "Maïs",
+        "Abies": "Sapin",
+        "Aesculus": "Marronnier",
+        "Alnus": "Aulne",
+        "Alternaria": "Alternaria",
+        "Ambrosia": "Ambroisie",
+        "Artemisia": "Armoise",
+        "Asteraceae": "Astéracées",
+        "Betula": "Bouleau",
+        "Brassica": "Colza",
+        "Carpinus": "Charme",
+        "Castanea": "Châtaignier",
+        "Chenopodium": "Chenopode",
+        "Corylus": "Noisetier",
+        "Cyperaceae": "Cypéracée",
+        "Erica": "Bruyère",
+        "Fagus": "Hêtre",
+        "Fraxinus": "Frêne",
+        "Fungus": "Champignons",
+        "Galium": "Rubiacée",
+        "Glomerorum": "Moisissures",
+        "Humulus": "Houblon",
+        "Impatiens": "Impatiens",
+        "Juglans": "Noyer",
+        "Juniperus": "Genévrier",
+        "Larix": "Mélèze",
+        "Mercurialis": "Mercuriales",
+        "Picea": "Epicea",
+        "Pinus": "Pin",
+        "Plantago": "Plantain",
+        "Platanus": "Platane",
+        "Poaceae": "Graminées",
+        "Populus": "Peuplier",
+        "Quercus": "Chêne",
+        "Quercus ilex": "Chêne vert",
+        "Rumex": "Oseille",
+        "Salix": "Saule",
+        "Sambucus": "Sureau",
+        "Secale": "Sécale",
+        "Solidago": "Verge d'or",
+        "Taraxacum": "Pissenlit",
+        "Taxus": "If",
+        "Tilia": "Tilleul",
+        "Ulmus": "Orme",
+        "Urtica": "Ortie",
+        "Varia": "Varia"
+    },
+    "concentrations": "Concentration de pollens",
+    "from": "de",
+    "to": "à",
+    "unit": "Pollen/m³",
+    "pollen": "Pollen",
+    "location": "Lieu",
+    "timeRange": "Période",
+    "month": "Mois",
+    "months": "Mois",
+    "display": "Affichage",
+    "today": "aujourd'hui",
+    "selectArea": "Choisir une zone",
+    "moveTimeAxis": "Déplacer l'axe temporel",
+    "resetView": "Réinitialiser la vue",
+    "download": "Télécharger les données affichées",
+    "lastMonth": "Mois précédent",
+    "apply": "Appliquer"
+}

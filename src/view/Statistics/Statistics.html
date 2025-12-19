@@ -1,0 +1,40 @@
+<page-layout>
+    <div class="d-flex flex-column page-root">
+        <div class="row d-flex flex-row">
+            <div class="col-12 col-md-4">
+                <dropdown :store="locationsStore" :labelProvider="locationsLabelProvider"
+                    v-on:update-selected="updateSelectedLocation" :label="$t('location')" :preselectedId="$defaultLocationId" />
+            </div>
+            <div class="col-12 col-md-8">
+                <dropdown :store="pollenStore" :labelProvider="pollenLabelProvider" :sortByProvider="sortByProvider"
+                    v-on:update-selected="updateSelectedPollen" :label="$t('pollen')" preselected="Betula" />
+            </div>
+        </div>
+        <div class="row d-flex flex-row mt-3">
+            <div class="col-12">
+                <table class="table table-hover" v-show="hasStats">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col" v-t="'page.statistics.year'"></th>
+                            <th scope="col" v-t="'page.statistics.start'"></th>
+                            <th scope="col" v-t="'page.statistics.peak'"></th>
+                            <th scope="col" v-t="'page.statistics.end'"></th>
+                            <th scope="col" v-t="'page.statistics.sum'"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(stat,i) in stats" :key="i">
+                            <th scope="row">{{ i }}</th>
+                            <td>{{ timestampToString(stat.start) }}</td>
+                            <td>{{ timestampToString(stat.peak) }}</td>
+                            <td>{{ timestampToString(stat.end) }}</td>
+                            <td>{{ Math.round(stat.yearsum) }} Pollen/m³</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="alert alert-info" role="alert" v-show="!hasStats" v-t="'page.statistics.noData'">
+                </div>
+            </div>
+        </div>
+    </div>
+</page-layout>
