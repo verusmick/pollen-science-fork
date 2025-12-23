@@ -1,0 +1,40 @@
+.rules-container {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.rule-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.rule-item:last-child {
+  border-bottom: none;
+}
+
+.rule-title {
+  font-weight: 600;
+}
+
+.rule-description {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.rule-meta {
+  margin-top: 6px;
+}
+
+.rule-meta .badge {
+  margin-right: 4px;
+}
+
+.rule-actions {
+  text-align: right;
+}
+
+.scroll-area {
+  max-height: 500px;
+  //   overflow-y: auto;
+}

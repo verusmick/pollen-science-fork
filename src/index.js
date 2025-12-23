@@ -15,6 +15,7 @@ import TwentyfourHoursView from "./view/TwentyfourHours/TwentyfourHoursView.vue"
 import StatisticsView from "./view/Statistics/StatisticsView.vue";
 import ImpressumView from "./view/Impressum/ImpressumView.vue";
 import HintergrundView from "./view/Hintergrund/HintergrundView.vue";
+import RulesAndNotifications from "./view/RulesAndNotifications/RulesAndNotifications.vue";
 
 import i18nMessages_de from "./assets/i18n/messages_de.json";
 import i18nMessages_en from "./assets/i18n/messages_en.json";
@@ -43,6 +44,7 @@ const routes = [
     { path: "/historie", component: TwentyfourHoursView },
     { path: "/statistik", component: StatisticsView },
     { path: "/impressum", component: ImpressumView },
+    { path: "/regeln-und-benachrichtigungen", component: RulesAndNotifications },
     { path: "/hintergrund", component: HintergrundView },
     { path: "/:pathMatch(.*)*", redirect: "/aktuell" },
     { path: "/s", redirect: () => `/aktuell?lang=${i18n.global.locale.value}` },

@@ -10,6 +10,7 @@
             "statistics": "Statistics",
             "background": "Background & Explanations",
             "imprint": "Impressum",
+            "rulesAndNotifications": "Rules and Notifications",
             "login": "Login",
             "logout": "Logout"
         },
@@ -35,6 +36,9 @@
             "end": "end",
             "sum": "yearly sum",
             "noData": "no data."
+        },
+        "rulesAndNotifications":{
+
         }
     },
     "pollenName": {

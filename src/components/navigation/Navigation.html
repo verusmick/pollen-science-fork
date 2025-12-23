@@ -26,6 +26,9 @@
             <li :class="['nav-item', currentPage.includes('impressum') ? 'active' : '']">
                 <router-link to="/impressum" class="nav-link"><span>{{t('component.nav.imprint')}}</span></router-link>
             </li>
+            <li :class="['nav-item', currentPage.includes('rulesAndNotifications') ? 'active' : '']">
+                <router-link to="/regeln-und-benachrichtigungen" class="nav-link"><span>{{t('component.nav.rulesAndNotifications')}}</span></router-link>
+            </li>
         </ul>
     </div>
 

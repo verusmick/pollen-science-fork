@@ -1,0 +1,180 @@
+<page-layout>
+  <div class="rules-container">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h5 class="mb-0">Rules</h5>
+      <button class="btn btn-primary btn-sm">
+        <i class="fas fa-plus mr-1"></i> Add new Rule
+      </button>
+    </div>
+
+    <!-- Filters -->
+    <div class="form-row mb-3">
+      <div class="col-md-4">
+        <input
+          type="text"
+          class="form-control form-control-sm"
+          placeholder="Search Rules..."
+        />
+      </div>
+      <div class="col-md-3">
+        <select class="form-control form-control-sm">
+          <option>Pollen</option>
+          <option>Mould</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select class="form-control form-control-sm">
+          <option>Station</option>
+          <option>Region</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Rules List -->
+    <div class="scroll-area">
+      <!-- Rule -->
+      <div class="rule-item">
+        <div class="row align-items-start">
+          <div class="col-md-1">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-sm btn-primary active">
+                <input type="radio" checked /> On
+              </label>
+              <label class="btn btn-sm btn-outline-secondary">
+                <input type="radio" /> Off
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="rule-title">Off-Season Birch Detection</div>
+            <div class="rule-description">
+              Notifies when Birch pollen is detected outside its typical spring
+              season window.
+            </div>
+            <div class="rule-meta">
+              <span class="badge badge-primary">Birch</span>
+              <span class="badge badge-warning">Alerting</span>
+              <span class="badge badge-secondary">Feucht</span>
+              <span class="text-muted ml-2">Season: Mar 01 - Jun 30</span>
+            </div>
+          </div>
+
+          <div class="col-md-2 rule-actions">
+            <button class="btn btn-sm btn-outline-secondary">
+              <i class="fas fa-pencil-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rule -->
+      <div class="rule-item">
+        <div class="row align-items-start">
+          <div class="col-md-1">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-sm btn-primary active">
+                <input type="radio" checked /> On
+              </label>
+              <label class="btn btn-sm btn-outline-secondary">
+                <input type="radio" /> Off
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="rule-title">Grass Peak Season Monitoring</div>
+            <div class="rule-description">
+              Alerts if Grass pollen exceeds normal levels during the high-risk
+              summer months.
+            </div>
+            <div class="rule-meta">
+              <span class="badge badge-success">Grass</span>
+              <span class="badge badge-secondary">Hof</span>
+              <span class="text-muted ml-2">Season: Feb 01 - Dec 30</span>
+            </div>
+          </div>
+
+          <div class="col-md-2 rule-actions">
+            <button class="btn btn-sm btn-outline-secondary">
+              <i class="fas fa-pencil-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rule -->
+      <div class="rule-item">
+        <div class="row align-items-start">
+          <div class="col-md-1">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-sm btn-primary active">
+                <input type="radio" checked /> On
+              </label>
+              <label class="btn btn-sm btn-outline-secondary">
+                <input type="radio" /> Off
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="rule-title">Mould Activity Watch</div>
+            <div class="rule-description">
+              Monitors Schimmel/Moulds counts and alerts when concentrations
+              surpass predefined safety levels.
+            </div>
+            <div class="rule-meta">
+              <span class="badge badge-info">Mould</span>
+              <span class="badge badge-secondary">Weitech</span>
+              <span class="badge badge-secondary">Hof</span>
+              <span class="text-muted ml-2">Season: Dec 01 - Jul 02</span>
+            </div>
+          </div>
+
+          <div class="col-md-2 rule-actions">
+            <button class="btn btn-sm btn-outline-secondary">
+              <i class="fas fa-pencil-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rule -->
+      <div class="rule-item">
+        <div class="row align-items-start">
+          <div class="col-md-1">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-sm btn-primary active">
+                <input type="radio" checked /> On
+              </label>
+              <label class="btn btn-sm btn-outline-secondary">
+                <input type="radio" /> Off
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="rule-title">Seasonal Pollen Threshold Rule</div>
+            <div class="rule-description">
+              Notifies when selected pollen type exceeds configured alert
+              thresholds during the defined season.
+            </div>
+            <div class="rule-meta">
+              <span class="badge badge-primary">Birch</span>
+              <span class="badge badge-secondary">Hof</span>
+              <span class="badge badge-secondary">Garmisch</span>
+              <span class="text-muted ml-2">Season: May 06 - Dec 03</span>
+            </div>
+          </div>
+
+          <div class="col-md-2 rule-actions">
+            <button class="btn btn-sm btn-outline-secondary">
+              <i class="fas fa-pencil-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</page-layout>
