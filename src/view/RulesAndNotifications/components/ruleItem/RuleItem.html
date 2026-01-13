@@ -1,0 +1,47 @@
+<div class="rule-item">
+  <div class="row align-items-start">
+    <!-- Toggle Button Group -->
+    <div class="col-md-1">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label
+          class="btn btn-sm"
+          :class="rule.isActive ? 'btn-primary' : 'btn-outline-secondary'"
+          @click="toggleActive(true)"
+        >
+          <input type="radio" :checked="rule.isActive" /> On
+        </label>
+        <label
+          class="btn btn-sm"
+          :class="!rule.isActive ? 'btn-primary' : 'btn-outline-secondary'"
+          @click="toggleActive(false)"
+        >
+          <input type="radio" :checked="!rule.isActive" /> Off
+        </label>
+      </div>
+    </div>
+
+    <!-- Rule Content -->
+    <div class="col-md-9">
+      <div class="rule-title">{{ rule.title }}</div>
+      <div class="rule-description">{{ rule.description }}</div>
+      <div class="rule-meta">
+        <span
+          v-for="(badge, index) in rule.badges"
+          :key="index"
+          class="badge mr-1"
+          :class="`badge-${badge.type}`"
+        >
+          {{ badge.label }}
+        </span>
+        <span class="text-muted ml-2">Season: {{ rule.seasonDisplay }}</span>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="col-md-2 rule-actions">
+      <button class="btn btn-sm btn-outline-secondary" @click="handleEdit">
+        <i class="fas fa-pencil-alt"></i>
+      </button>
+    </div>
+  </div>
+</div>

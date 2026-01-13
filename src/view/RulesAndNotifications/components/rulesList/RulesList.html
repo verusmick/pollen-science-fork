@@ -1,0 +1,14 @@
+<div class="scroll-area">
+  <div v-if="rules.length === 0" class="text-center py-5">
+    <p class="text-muted">No rules configured</p>
+  </div>
+  <div v-else>
+    <rule-item
+      v-for="rule in rules"
+      :key="rule.id"
+      :rule="rule"
+      @toggle="handleToggle"
+      @edit="handleEdit"
+    />
+  </div>
+</div>
