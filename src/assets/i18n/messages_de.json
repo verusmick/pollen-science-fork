@@ -36,6 +36,11 @@
       "end": "Ende",
       "sum": "Jahressumme",
       "noData": "Es liegen keine Daten vor."
+    },
+    "rulesAndNotifications": {
+      "title": "Regeln",
+      "addNewRule": "Neue Regel hinzufügen",
+      "components": {}
     }
   },
   "pollenName": {
