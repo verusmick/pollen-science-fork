@@ -21,7 +21,7 @@ export default {
         {
           name: "description",
           content:
-            "Dies ermöglicht speziell den Vergleich zwischen den Jahren.", //todo kabir
+            "Auf dieser Seite sehen Sie alle benutzerdefinierten Regeln, die erstellt wurden, um zu warnen, wenn Pollen außerhalb der Pollensaison fliegen könnten.",
         },
       ],
     });
