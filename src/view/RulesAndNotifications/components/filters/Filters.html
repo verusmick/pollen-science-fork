@@ -1,21 +1,55 @@
-<div class="mb-3 filters-container">
-  <div class="col-md-4">
-    <input
-      type="text"
-      class="form-control form-control-sm"
-      placeholder="Search Rules..."
-    />
-  </div>
-  <div class="col-md-3">
-    <select class="form-control form-control-sm">
-      <option>Pollen</option>
-      <option>Mould</option>
-    </select>
-  </div>
-  <div class="col-md-3">
-    <select class="form-control form-control-sm">
-      <option>Station</option>
-      <option>Region</option>
-    </select>
+<div class="filters-container mb-3">
+  <div class="row align-items-center">
+    <!-- Search -->
+    <div class="col-md-4">
+      <search-input
+        v-model="query"
+        placeholder="Rule Name"
+        @search="applyFilters"
+      />
+    </div>
+
+    <!-- Pollen Type -->
+    <div class="col-md-2">
+      <select-input
+        v-model="selectedType"
+        :options="typeOptions"
+        placeholder="Pollen type"
+        allow-empty
+        empty-label="All"
+        @change="applyFilters"
+      />
+    </div>
+
+    <!-- Station -->
+    <div class="col-md-2">
+      <select-input
+        v-model="selectedStation"
+        :options="stationOptions"
+        placeholder="Station"
+        allow-empty
+        empty-label="All"
+        @change="applyFilters"
+      />
+    </div>
+
+    <!-- Status -->
+    <div class="col-md-2">
+      <select-input
+        v-model="selectedStatus"
+        :options="statusOptions"
+        placeholder="Status"
+        allow-empty
+        empty-label="All"
+        @change="applyFilters"
+      />
+    </div>
+
+    <!-- Reset Button -->
+    <div class="col-md-2 text-right">
+      <button class="btn btn-primary btn-sm" @click="resetFilters">
+        Reset Filters
+      </button>
+    </div>
   </div>
 </div>
