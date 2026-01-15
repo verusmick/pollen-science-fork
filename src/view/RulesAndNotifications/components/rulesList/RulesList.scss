@@ -1,0 +1,16 @@
+.rules-list {
+  min-height: 400px;
+}
+
+.page-link {
+  cursor: pointer;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+}

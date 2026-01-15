@@ -1,12 +1,5 @@
-import _ from "lodash";
-import { defineComponent } from "vue";
-
-export default defineComponent({
+export default {
   name: "RuleItem",
-  components: {},
-  data: function () {
-    return {};
-  },
   props: {
     rule: {
       type: Object,
@@ -14,18 +7,26 @@ export default defineComponent({
       default: () => ({}),
     },
   },
-  watch: {},
+  computed: {
+    isActive() {
+      return this.rule.isActive !== false; // Default to true if not specified
+    },
+  },
   methods: {
     toggleActive(activeState) {
-      if (this.rule.isActive !== activeState) {
+      if (this.isActive !== activeState) {
         this.$emit("toggle", this.rule.id, activeState);
       }
     },
 
-    handleEdit() {
-      this.$emit("edit", this.rule);
+    getTagColor(pollenType) {
+      const colorMap = {
+        Birch: "primary",
+        Grass: "success",
+        Mould: "info",
+        Ragweed: "danger",
+      };
+      return colorMap[pollenType] || "secondary";
     },
   },
-  mounted: function () {},
-  updated: function () {},
-});
+};

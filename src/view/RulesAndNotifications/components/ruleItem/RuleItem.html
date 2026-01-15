@@ -1,45 +1,71 @@
-<div class="rule-item">
-  <div class="row align-items-start">
-    <!-- Toggle Button Group -->
-    <div class="col-md-1">
+<div class="rule-item mb-4 p-4 border rounded bg-white">
+  <div class="d-flex align-items-start">
+    <!-- Toggle Switch -->
+    <div class="mr-3">
       <div class="btn-group btn-group-toggle" data-toggle="buttons">
         <label
           class="btn btn-sm"
-          :class="rule.isActive ? 'btn-primary' : 'btn-outline-secondary'"
+          :class="isActive ? 'btn-primary active' : 'btn-outline-secondary'"
           @click="toggleActive(true)"
         >
-          <input type="radio" :checked="rule.isActive" /> On
+          <input type="radio" :checked="isActive" autocomplete="off" /> On
         </label>
         <label
           class="btn btn-sm"
-          :class="!rule.isActive ? 'btn-primary' : 'btn-outline-secondary'"
+          :class="!isActive ? 'btn-primary active' : 'btn-outline-secondary'"
           @click="toggleActive(false)"
         >
-          <input type="radio" :checked="!rule.isActive" /> Off
+          <input type="radio" :checked="!isActive" autocomplete="off" /> Off
         </label>
       </div>
     </div>
 
     <!-- Rule Content -->
-    <div class="col-md-9">
-      <div class="rule-title">{{ rule.title }}</div>
-      <div class="rule-description">{{ rule.description }}</div>
-      <div class="rule-meta">
+    <div class="flex-grow-1">
+      <h5 class="rule-title mb-2 text-dark">{{ rule.title }}</h5>
+      <p class="rule-description mb-3 text-muted">{{ rule.description }}</p>
+
+      <!-- Tags -->
+      <div class="rule-tags mb-2">
+        <!-- Primary Tag -->
         <span
-          v-for="(badge, index) in rule.badges"
-          :key="index"
-          class="badge mr-1"
-          :class="`badge-${badge.type}`"
+          class="badge mr-2"
+          :class="`badge-${getTagColor(rule.pollenType)}`"
         >
-          {{ badge.label }}
+          {{ rule.pollenType }}
         </span>
-        <span class="text-muted ml-2">Season: {{ rule.seasonDisplay }}</span>
+
+        <!-- Action Type -->
+        <span v-if="rule.actionType" class="badge badge-warning mr-2">
+          {{ rule.actionType }}
+        </span>
+
+        <!-- Stations -->
+        <span
+          v-for="station in rule.stations"
+          :key="station"
+          class="badge badge-secondary mr-2"
+        >
+          {{ station }}
+        </span>
+      </div>
+
+      <!-- Season -->
+      <div class="rule-season text-muted">
+        <small>
+          <i class="far fa-calendar-alt mr-1"></i>
+          <strong>Season:</strong> {{ rule.seasonStart }} - {{ rule.seasonEnd }}
+        </small>
       </div>
     </div>
 
-    <!-- Actions -->
-    <div class="col-md-2 rule-actions">
-      <button class="btn btn-sm btn-outline-secondary" @click="handleEdit">
+    <!-- Edit Button -->
+    <div class="ml-3">
+      <button
+        class="btn btn-sm btn-outline-secondary"
+        @click="$emit('edit', rule)"
+        title="Edit rule"
+      >
         <i class="fas fa-pencil-alt"></i>
       </button>
     </div>
