@@ -22,8 +22,8 @@
 
     <!-- Rule Content -->
     <div class="flex-grow-1">
-      <h5 class="rule-title mb-2 text-dark">{{ rule.title }}</h5>
-      <p class="rule-description mb-3 text-muted">{{ rule.description }}</p>
+      <h6 class="rule-title mb-2 text-dark">{{ rule.title }}</h6>
+      <p class="rule-description mb-1 text-muted">{{ rule.description }}</p>
 
       <!-- Tags -->
       <div class="rule-tags mb-2">
@@ -53,20 +53,19 @@
       <!-- Season -->
       <div class="rule-season text-muted">
         <small>
-          <i class="far fa-calendar-alt mr-1"></i>
           <strong>Season:</strong> {{ rule.seasonStart }} - {{ rule.seasonEnd }}
         </small>
       </div>
     </div>
 
     <!-- Edit Button -->
-    <div class="ml-3">
+    <div class="ml-3 align-self-center">
       <button
         class="btn btn-sm btn-outline-secondary"
         @click="$emit('edit', rule)"
         title="Edit rule"
       >
-        <i class="fas fa-pencil-alt"></i>
+        <i class="fad fa-pencil"></i>
       </button>
     </div>
   </div>
