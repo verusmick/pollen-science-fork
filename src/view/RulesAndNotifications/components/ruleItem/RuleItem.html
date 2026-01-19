@@ -2,22 +2,11 @@
   <div class="d-flex align-items-start">
     <!-- Toggle Switch -->
     <div class="mr-3">
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label
-          class="btn btn-sm"
-          :class="isActive ? 'btn-primary active' : 'btn-outline-secondary'"
-          @click="toggleActive(true)"
-        >
-          <input type="radio" :checked="isActive" autocomplete="off" /> On
-        </label>
-        <label
-          class="btn btn-sm"
-          :class="!isActive ? 'btn-primary active' : 'btn-outline-secondary'"
-          @click="toggleActive(false)"
-        >
-          <input type="radio" :checked="!isActive" autocomplete="off" /> Off
-        </label>
-      </div>
+      <toggle-switch
+        v-model="localIsActive"
+        :small="true"
+        @change="handleToggleChange"
+      />
     </div>
 
     <!-- Rule Content -->

@@ -1,5 +1,10 @@
+import ToggleSwitch from "../../../../components/ui/toggleSwitch/ToggleSwitch.vue";
+
 export default {
   name: "RuleItem",
+  components: {
+    ToggleSwitch,
+  },
   props: {
     rule: {
       type: Object,
@@ -7,16 +12,22 @@ export default {
       default: () => ({}),
     },
   },
-  computed: {
-    isActive() {
-      return this.rule.isActive !== false; // Default to true if not specified
+  data() {
+    return {
+      localIsActive: this.rule.isActive !== false,
+    };
+  },
+  watch: {
+    "rule.isActive": {
+      handler(newVal) {
+        this.localIsActive = newVal !== false;
+      },
+      immediate: true,
     },
   },
   methods: {
-    toggleActive(activeState) {
-      if (this.isActive !== activeState) {
-        this.$emit("toggle", this.rule.id, activeState);
-      }
+    handleToggleChange(newValue) {
+      this.$emit("toggle", this.rule.id, newValue);
     },
 
     getTagColor(pollenType) {
