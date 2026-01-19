@@ -1,0 +1,61 @@
+<div class="rule-item mb-2 py-3 px-2 bg-white">
+  <div class="d-flex align-items-start">
+    <!-- Toggle Switch -->
+    <div class="mr-3">
+      <toggle-switch
+        v-model="localIsActive"
+        :small="true"
+        @change="handleToggleChange"
+      />
+    </div>
+
+    <!-- Rule Content -->
+    <div class="flex-grow-1">
+      <h6 class="rule-title mb-2 text-dark">{{ rule.title }}</h6>
+      <p class="rule-description mb-1 text-muted">{{ rule.description }}</p>
+
+      <!-- Tags -->
+      <div class="rule-tags mb-2">
+        <!-- Primary Tag -->
+        <span
+          class="badge mr-2"
+          :class="`badge-${getTagColor(rule.pollenType)}`"
+        >
+          {{ rule.pollenType }}
+        </span>
+
+        <!-- Action Type -->
+        <span v-if="rule.actionType" class="badge badge-warning mr-2">
+          {{ rule.actionType }}
+        </span>
+
+        <!-- Stations -->
+        <span
+          v-for="station in rule.stations"
+          :key="station"
+          class="badge badge-secondary mr-2"
+        >
+          {{ station }}
+        </span>
+      </div>
+
+      <!-- Season -->
+      <div class="rule-season text-muted">
+        <small>
+          <strong>Season:</strong> {{ rule.seasonStart }} - {{ rule.seasonEnd }}
+        </small>
+      </div>
+    </div>
+
+    <!-- Edit Button -->
+    <div class="ml-3 align-self-center">
+      <button
+        class="btn btn-sm btn-outline-secondary"
+        @click="$emit('edit', rule)"
+        title="Edit rule"
+      >
+        <i class="fad fa-pencil"></i>
+      </button>
+    </div>
+  </div>
+</div>

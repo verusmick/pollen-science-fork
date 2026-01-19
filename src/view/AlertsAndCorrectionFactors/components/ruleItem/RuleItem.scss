@@ -1,0 +1,24 @@
+.rule-item {
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease-in-out;
+}
+// todo: commented for the moment
+// .rule-item:hover {
+// box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// }
+
+.rule-title {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.rule-description {
+  line-height: 1.5;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.rule-tags .badge {
+  font-size: 0.8rem;
+  padding: 0.35em 0.65em;
+}

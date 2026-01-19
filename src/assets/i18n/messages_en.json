@@ -42,6 +42,11 @@
       "title": "Rules",
       "addNewRule": "Add new Rule",
       "components": {}
+    },
+    "alertsAndCorrectionFactors": {
+      "title": "Alerts and Correction Factors",
+      "addNewRule": "Add new Rule",
+      "components": {}
     }
   },
   "pollenName": {
