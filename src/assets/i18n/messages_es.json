@@ -36,6 +36,11 @@
       "end": "Final",
       "sum": "suma",
       "noData": "Sin datos."
+    },
+    "rulesAndNotifications": {
+      "title": "Reglas",
+      "addNewRule": "Añadir nueva Regla",
+      "components": {}
     }
   },
   "pollenName": {
