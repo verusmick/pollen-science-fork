@@ -1,11 +1,12 @@
-import AlertCard from "./components/alertCard/AlertCard.vue";
-import FilterBar from "./components/filterBar/FilterBar.vue";
+<script>
+import AlertsFilterBar from '../components/AlertsFiltersSection.vue';
+import AlertCard from '../components/AlertCard.vue';
 
 export default {
-  name: "AlertsList",
+  name: "AlertsListPage",
   components: {
     AlertCard,
-    FilterBar,
+    AlertsFilterBar,
   },
   props: {},
   data() {
@@ -60,3 +61,16 @@ export default {
     };
   },
 };
+
+</script>
+
+<template>
+  <div class="alert-list">
+    <AlertsFilterBar />
+    <AlertCard v-for="alert in alerts" :key="alert.id" :alert="alert" />
+  </div>
+</template>
+
+<style scoped>
+  
+</style>
