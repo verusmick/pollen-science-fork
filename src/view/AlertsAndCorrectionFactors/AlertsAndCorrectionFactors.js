@@ -1,34 +1,40 @@
-import _ from "lodash";
-import { useMeta } from "vue-meta";
-
 import PageLayout from "./../../layouts/PageLayout.vue";
-import Header from "./components/header/Header.vue";
-import Filters from "./components/filters/Filters.vue";
-import RulesList from "./components/rulesList/RulesList.vue";
-
+import AlertsList from "./alerts/Alerts.vue";
+import CorrectionFactorsList from "./correctionFactors/CorrectionFactors.vue";
 export default {
-  name: "RulesAndNotifications",
+  name: "AlertsAndCorrectionFactorsPage",
   components: {
-    "page-layout": PageLayout,
-    "header-section": Header,
-    filters: Filters,
-    "rules-list": RulesList,
+    PageLayout,
+    AlertsList,
+    CorrectionFactorsList,
   },
-  created() {
-    useMeta({
-      title: "Pollen Science - Regeln und Benachrichtigungen",
-      meta: [
-        {
-          name: "description",
-          content:
-            "Auf dieser Seite sehen Sie alle benutzerdefinierten Regeln, die erstellt wurden, um zu warnen, wenn Pollen außerhalb der Pollensaison fliegen könnten.",
-        },
-      ],
-    });
+
+  data() {
+    return {
+      activeTab: "alerts", // Default active tab
+    };
   },
-  data: () => {
-    return {};
+  methods: {
+    setActiveTab(tabName) {
+      this.activeTab = tabName;
+    },
   },
-  computed: {},
-  methods: {},
+  // Optional: Handle browser back/forward for tab state
+  mounted() {
+    // Check URL hash for tab selection
+    const hash = window.location.hash;
+    if (hash === "#correction-factors") {
+      this.activeTab = "correctionFactors";
+    } else if (hash === "#alerts") {
+      this.activeTab = "alerts";
+    }
+  },
+  watch: {
+    activeTab(newTab) {
+      // Update URL hash when tab changes (optional)
+      const hash =
+        newTab === "correctionFactors" ? "#correction-factors" : "#alerts";
+      window.history.pushState(null, null, hash);
+    },
+  },
 };

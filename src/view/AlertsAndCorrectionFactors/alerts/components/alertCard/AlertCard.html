@@ -1,0 +1,56 @@
+<div class="card mb-3 alert-card rounded">
+  <div class="d-flex align-items-stretch">
+    <!-- Severity Block -->
+    <div :class="severityBlockClass">
+      <div class="severity-label text-white">
+        <!-- {{ severityLabel }} -->
+      </div>
+    </div>
+
+    <!-- Alert Content -->
+    <div class="flex-fill p-3">
+      <div class="d-flex justify-content-between align-items-start">
+        <!-- Left Content -->
+        <div class="flex-fill">
+          <!-- Main Alert Info -->
+          <div class="mb-2">
+            <span :class="severityDotClass" class="mr-2"></span>
+            <strong class="font-weight-bold">{{ alert.pollenType }}</strong>
+            <span
+              v-if="alert.correction"
+              class="ml-2 small font-weight-normal text-muted"
+            >
+              · Correction Applied
+            </span>
+          </div>
+
+          <!-- Details -->
+          <div class="text-muted mb-1 small">
+            {{ alert.pollenCount }} pollen/m³ · {{ alert.station }}
+          </div>
+
+          <!-- Rule -->
+          <div class="mb-1 small">
+            Triggered by rule: <strong>{{ alert.rule }}</strong>
+          </div>
+
+          <!-- Time -->
+          <div class="text-muted small">{{ alert.time }}</div>
+        </div>
+
+        <!-- Right Content - Status -->
+        <div class="text-right d-flex flex-column align-items-end pl-3">
+          <div v-if="alert.correction" class="mb-2">
+            <span class="badge badge-secondary small font-weight-normal">
+              Correction Applied
+            </span>
+          </div>
+          <div class="mb-1">
+            <span :class="statusBadgeClass"> {{ alert.status }} </span>
+          </div>
+          <a href="#" class="text-primary small">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

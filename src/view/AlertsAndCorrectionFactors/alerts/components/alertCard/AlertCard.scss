@@ -1,0 +1,78 @@
+.alert-card {
+  border-left: 3px solid transparent;
+  border: 1px solid #e9ecef;
+  transition: all 0.15s ease;
+}
+
+.alert-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-left-color: #007bff;
+  cursor: pointer;
+}
+
+.severity-block {
+  width: 60px;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+}
+
+.severity-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+/* Severity dots */
+.dot-danger,
+.dot-warning,
+.dot-success,
+.dot-secondary {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot-danger {
+  background-color: #dc3545;
+}
+
+.dot-warning {
+  background-color: #ffc107;
+}
+
+.dot-success {
+  background-color: #28a745;
+}
+
+.dot-secondary {
+  background-color: #6c757d;
+}
+
+/* Badge styling */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.25em 0.6em;
+  font-weight: 500;
+}
+
+/* Typography */
+small {
+  font-size: 0.875rem;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* Ensure proper spacing */
+.d-flex > div {
+  min-width: 0;
+  /* Prevent flex items from overflowing */
+}
