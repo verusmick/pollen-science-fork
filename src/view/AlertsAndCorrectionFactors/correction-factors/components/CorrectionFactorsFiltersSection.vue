@@ -1,0 +1,69 @@
+<template>
+  <div class="card mb-4">
+    <div class="card-body py-2">
+      <div class="row align-items-center">
+        <div class="col-md-2 mb-2 mb-md-0">
+          <div class="d-flex align-items-center">
+            <span class="text-muted mr-2">#001</span>
+            <input type="text" class="form-control form-control-sm" placeholder="ID" v-model="filters.id" />
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-2 mb-md-0">
+          <select class="form-control form-control-sm" v-model="filters.pollenType">
+            <option value="">Pollen type</option>
+            <option value="Birch">Birch</option>
+            <option value="Grass">Grass</option>
+            <option value="Eibe">Eibe (Taxus)</option>
+            <option value="Mould">Mould</option>
+          </select>
+        </div>
+
+        <div class="col-md-3 mb-2 mb-md-0">
+          <select class="form-control form-control-sm" v-model="filters.station">
+            <option value="">Station</option>
+            <option value="Marktheidenfeld">Marktheidenfeld</option>
+            <option value="Feucht">Feucht</option>
+            <option value="Hof">Hof</option>
+            <option value="Garmisch">Garmisch</option>
+          </select>
+        </div>
+
+        <div class="col-md-2 mb-2 mb-md-0">
+          <select class="form-control form-control-sm" v-model="filters.status">
+            <option value="">Status</option>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+            <option value="pending">Pending</option>
+          </select>
+        </div>
+
+        <div class="col-md-2 text-right">
+          <button class="btn btn-sm btn-outline-secondary" @click="resetFilters">
+            Reset Filters
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>
+<script>
+
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "CorrectionFactorsFiltersSection",
+  data() {
+    return {
+      filters: {
+        id: "",
+        pollenType: "",
+        station: "",
+        status: "",
+      }
+    };
+  },
+
+  methods: {},
+});
+</script>

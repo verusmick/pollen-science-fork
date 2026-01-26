@@ -1,5 +1,5 @@
 <template>
-  <div class="card mb-3 alert-card rounded">
+  <div class="card mb-3 alert-card rounded" @click="navigateToDetails">
     <div class="d-flex align-items-stretch">
       <!-- Severity Block -->
       <div :class="severityBlockClass">
@@ -33,9 +33,7 @@
             </div>
 
             <!-- Time -->
-            <div class="text-muted small">
-              {{ alert.time }}
-            </div>
+            <div class="text-muted small">{{ alert.time }}</div>
           </div>
 
           <!-- Right Content - Status -->
@@ -46,9 +44,7 @@
               </span>
             </div>
             <div class="mb-1">
-              <span :class="statusBadgeClass">
-                {{ alert.status }}
-              </span>
+              <span :class="statusBadgeClass"> {{ alert.status }} </span>
             </div>
             <a href="#" class="text-primary small">View Details</a>
           </div>
@@ -57,61 +53,84 @@
     </div>
   </div>
 </template>
+<script>
+import { useRouter } from "vue-router";
 
-<script setup>
-import { computed } from 'vue';
+export default {
+  name: "AlertCard",
+  props: {
+    alert: {
+      type: Object,
+      required: true,
+      default: () => ({}),
+    },
+  },
+  setup() {
+    const router = useRouter();
 
-const props = defineProps({ alert: Object });
+    const navigateToDetails = () => {
+      router.push("/details-zur-warnmeldung");
+    };
 
-const severityLabel = computed(() => {
-  const labels = {
-    red: 'RED ALERT',
-    yellow: 'WARNING',
-    green: 'ALERT'
-  };
-  return labels[props.alert.severity] || props.alert.severity.toUpperCase();
-});
+    return {
+      navigateToDetails,
+    };
+  },
+  computed: {
+    severityLabel() {
+      const labels = {
+        red: "RED ALERT",
+        yellow: "WARNING",
+        green: "ALERT",
+      };
+      return (
+        labels[this.alert.severity] || (this.alert.severity || "").toUpperCase()
+      );
+    },
 
-const severityBlockClass = computed(() => {
-  const base = "severity-block";
-  const color = {
-    red: "bg-danger",
-    yellow: "bg-warning",
-    green: "bg-success"
-  }[props.alert.severity] || "bg-secondary";
-  return `${base} ${color}`;
-});
+    severityBlockClass() {
+      const base = "severity-block";
+      const color =
+        {
+          red: "bg-danger",
+          yellow: "bg-warning",
+          green: "bg-success",
+        }[this.alert.severity] || "bg-secondary";
+      return `${base} ${color}`;
+    },
 
-const severityDotClass = computed(() => {
-  return {
-    red: "dot-danger",
-    yellow: "dot-warning",
-    green: "dot-success"
-  }[props.alert.severity] || "dot-secondary";
-});
+    severityDotClass() {
+      return (
+        {
+          red: "dot-danger",
+          yellow: "dot-warning",
+          green: "dot-success",
+        }[this.alert.severity] || "dot-secondary"
+      );
+    },
 
-const statusBadgeClass = computed(() => {
-  const base = "badge";
-  if (props.alert.status === "Resolved") {
-    return `${base} badge-success`;
-  } else if (props.alert.status === "Open") {
-    return `${base} badge-dark`;
-  } else {
-    return `${base} badge-secondary`;
-  }
-});
+    statusBadgeClass() {
+      const base = "badge";
+      if (this.alert.status === "Resolved") {
+        return `${base} badge-success`;
+      } else if (this.alert.status === "Open") {
+        return `${base} badge-dark`;
+      } else {
+        return `${base} badge-secondary`;
+      }
+    },
+  },
+};
 </script>
-
 <style scoped>
 .alert-card {
   border-left: 3px solid transparent;
   border: 1px solid #e9ecef;
-  transition: all .15s ease;
-  
+  transition: all 0.15s ease;
 }
 
 .alert-card:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   border-left-color: #007bff;
   cursor: pointer;
 }
