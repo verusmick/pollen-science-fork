@@ -1,5 +1,5 @@
 <template>
-  <div class="card mb-3 alert-card rounded">
+  <div class="card mb-3 alert-card rounded" @click="navigateToDetails">
     <div class="d-flex align-items-stretch">
       <!-- Severity Block -->
       <div :class="severityBlockClass">
@@ -54,6 +54,8 @@
   </div>
 </template>
 <script>
+import { useRouter } from "vue-router";
+
 export default {
   name: "AlertCard",
   props: {
@@ -62,6 +64,17 @@ export default {
       required: true,
       default: () => ({}),
     },
+  },
+  setup() {
+    const router = useRouter();
+
+    const navigateToDetails = () => {
+      router.push("/details-zur-warnmeldung");
+    };
+
+    return {
+      navigateToDetails,
+    };
   },
   computed: {
     severityLabel() {

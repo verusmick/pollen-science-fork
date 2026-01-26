@@ -27,6 +27,7 @@
         <div v-show="activeTab === 'correctionFactors'" class="tab-pane fade"
           :class="{ 'show active': activeTab === 'correctionFactors' }">
           <CorrectionFactorsListPage />
+           <!-- <AlertDetailsPage/> -->
         </div>
       </div>
     </div>
@@ -35,6 +36,7 @@
 </template>
 <script>
 import PageLayout from "../../../layouts/PageLayout.vue";
+import AlertDetailsPage from "../alerts/pages/AlertDetailsPage.vue";
 import AlertsListPage from "../alerts/pages/AlertsListPage.vue";
 import CorrectionFactorsListPage from "../correction-factors/pages/CorrectionFactorsListPage.vue";
 
@@ -43,7 +45,8 @@ export default {
   components: {
     PageLayout,
     AlertsListPage,
-    CorrectionFactorsListPage
+    CorrectionFactorsListPage,
+    AlertDetailsPage
   },
 
   data() {

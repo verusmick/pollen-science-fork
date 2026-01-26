@@ -57,9 +57,9 @@
             <!-- Actions -->
             <div class="d-flex flex-column align-items-end">
               <!-- Status Badge -->
-              <span class="badge mb-2" :class="`badge-${getStatusClass(factor.status)}`">
+              <!-- <span class="badge mb-2" :class="`badge-${getStatusClass(factor.status)}`">
                 {{ factor.status }}
-              </span>
+              </span> -->
 
               <!-- Edit Button -->
               <button class="btn btn-sm btn-outline-primary" @click="editFactor(factor)">
@@ -69,7 +69,7 @@
           </div>
 
           <!-- Footer -->
-          <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+          <!-- <div class="d-flex justify-content-between align-items-center pt-2 border-top">
             <div class="small text-muted">
               Created: {{ factor.createdDate }}
               <span v-if="factor.modifiedDate" class="ml-2">
@@ -84,17 +84,17 @@
                 Delete
               </button>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
 
     <!-- Add New Button -->
-    <div class="mt-4 text-right">
+    <!-- <div class="mt-4 text-right">
       <button class="btn btn-primary" @click="addNewFactor">
         <i class="fas fa-plus mr-2"></i> Add Correction Factor
       </button>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
