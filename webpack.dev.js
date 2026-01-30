@@ -16,7 +16,7 @@ module.exports = merge(common, {
     plugins: [
         new webpack.DefinePlugin({
             'global.env': {
-                apiBase: JSON.stringify('https://pollenscience.eu'),
+                apiBase: JSON.stringify('http://staging.pollen.enjambre.com.bo:8080'),
             },
         }),
     ],
