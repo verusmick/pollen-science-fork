@@ -10,6 +10,8 @@
       "statistics": "Estadísticas",
       "background": "Antecedentes",
       "imprint": "Imprimir",
+      "rulesAndNotifications": "Reglas y Notificaciones",
+      "alertsAndCorrectionFactors": "Alertas y Factores de corrección",
       "login": "Login",
       "logout": "Logout"
     },

@@ -11,7 +11,9 @@
             "background": "Background & Explanations",
             "imprint": "Impressum",
             "login": "Login",
-            "logout": "Logout"
+            "logout": "Logout",
+            "rulesAndNotifications": "Rules and Notifications",
+            "alertsAndCorrectionFactors": "Alerts and Correction Factors"
         },
         "plot": {
             "threshold": "threshold",

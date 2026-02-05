@@ -1,7 +1,7 @@
 <template>
   <div class="root">
     <Navigation />
-    <div class="container-fluid mt-3">
+    <div :class="{ 'container-fluid': useContainer, 'mt-3': useContainer }">
       <slot />
     </div>
   </div>
@@ -15,6 +15,12 @@ export default {
   components: {
     Navigation,
   },
+  props: {
+    useContainer: {
+      type: Boolean,
+      default: true
+    }
+  }
 };
 </script>
 

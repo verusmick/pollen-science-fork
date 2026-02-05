@@ -11,7 +11,9 @@
             "background": "Contexte et explications",
             "imprint": "Mentions légales",
             "login": "Se connecter",
-            "logout": "Se déconnecter"
+            "logout": "Se déconnecter",
+            "rulesAndNotifications": "Règles et notifications",
+            "alertsAndCorrectionFactors": "Alertes et Facteurs de correction"
         },
         "plot": {
             "threshold": "Valeur seuil",
