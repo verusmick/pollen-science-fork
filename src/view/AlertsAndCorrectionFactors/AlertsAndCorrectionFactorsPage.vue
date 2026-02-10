@@ -16,7 +16,7 @@ export default {
   },
   computed: {
     iframeUrl() {
-      return "https://pollen-ui.vercel.app/now-casting";
+      return "https://pollen-ui-testing.vercel.app/alerts-and-correction-factors";
     },
   },
 }

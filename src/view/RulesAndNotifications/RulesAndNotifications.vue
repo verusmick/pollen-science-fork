@@ -16,7 +16,7 @@ export default {
   },
   computed: {
     iframeUrl() {
-      return "https://pollen-ui.vercel.app/forecast";
+      return "https://pollen-ui-testing.vercel.app/rules-and-notifications";
     },
   },
 }
