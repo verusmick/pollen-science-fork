@@ -1,0 +1,15 @@
+.rules-list {
+  min-height: 400px;
+  padding-top: 10px;
+}
+
+.page-link {
+  //todo
+  cursor: pointer;
+}
+
+.page-item.active .page-link {
+  //todo
+  background-color: #007bff;
+  border-color: #007bff;
+}
