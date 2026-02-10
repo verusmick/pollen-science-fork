@@ -10,13 +10,13 @@
 import PageLayout from "../../layouts/PageLayout.vue";
 
 export default {
-  name: 'RulesAndNotifications',
+  name: 'AlertsAndCorrectionFactors',
   components: {
     PageLayout
   },
   computed: {
     iframeUrl() {
-      return "https://pollen-ui-testing.vercel.app/rules-and-notifications";
+      return "https://pollen-ui-testing.vercel.app/alerts-and-correction-factors";
     },
   },
 }

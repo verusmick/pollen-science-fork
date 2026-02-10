@@ -16,8 +16,7 @@ import StatisticsView from "./view/Statistics/StatisticsView.vue";
 import ImpressumView from "./view/Impressum/ImpressumView.vue";
 import HintergrundView from "./view/Hintergrund/HintergrundView.vue";
 import RulesAndNotificationsView from "./view/RulesAndNotifications/RulesAndNotifications.vue";
-import AlertsAndCorrectionFactorsView from "./view/AlertsAndCorrectionFactors/pages/AlertsAndCorrectionFactorsPage.vue";
-import AlertDetailsPageView from "./view/AlertsAndCorrectionFactors/alerts/pages/AlertDetailsPage.vue";
+import AlertsAndCorrectionFactorsView from "./view/AlertsAndCorrectionFactors/AlertsAndCorrectionFactorsPage.vue";
 
 import i18nMessages_de from "./assets/i18n/messages_de.json";
 import i18nMessages_en from "./assets/i18n/messages_en.json";
@@ -48,7 +47,6 @@ const routes = [
     { path: "/impressum", component: ImpressumView },
     { path: "/regeln-und-benachrichtigungen", component: RulesAndNotificationsView },
     { path: "/warnmeldungen-und-korrekturfaktoren", component: AlertsAndCorrectionFactorsView },
-    { path: "/details-zur-warnmeldung", component: AlertDetailsPageView },
     { path: "/hintergrund", component: HintergrundView },
     { path: "/:pathMatch(.*)*", redirect: "/aktuell" },
     { path: "/s", redirect: () => `/aktuell?lang=${i18n.global.locale.value}` },
