@@ -10,6 +10,7 @@
 import { ref, onMounted } from "vue";
 import PageLayout from "../../layouts/PageLayout.vue";
 import { registerIframe, initIframeListener } from '../../services/iframeBridge'
+import { useI18n } from "vue-i18n";
 
 export default {
   name: "AlertsAndCorrectionFactors",
@@ -17,8 +18,10 @@ export default {
     PageLayout
   },
   setup() {
+    const { t, locale } = useI18n();
     const iframeRef = ref(null);
-    const iframeUrl = global.env.iframePath + '/de/alerts-and-correction-factors';
+    const iframeUrl = global.env.iframePath + `/${locale?.value || 'en'}/alerts-and-correction-factors`;
+
     onMounted(() => {
       if (iframeRef.value?.contentWindow) {
         registerIframe(iframeRef.value.contentWindow);
