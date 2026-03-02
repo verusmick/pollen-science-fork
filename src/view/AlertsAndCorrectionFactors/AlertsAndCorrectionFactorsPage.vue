@@ -20,6 +20,7 @@ export default {
   setup() {
     const { t, locale } = useI18n();
     const iframeRef = ref(null);
+    console.log('log =>', locale?.value)
     const iframeUrl = global.env.iframePath + `/${locale?.value || 'en'}/alerts-and-correction-factors`;
 
     onMounted(() => {
