@@ -46,6 +46,8 @@ const routes = [
     { path: "/statistik", component: StatisticsView },
     { path: "/impressum", component: ImpressumView },
     { path: "/regeln-und-benachrichtigungen", component: RulesAndNotificationsView },
+    { path: "/:locale(en|de|nl|es|fr)/rules-and-notifications", component: RulesAndNotificationsView },
+    { path: "/:locale(en|de|nl|es|fr)/rules-and-notifications/:section(notifications|rules|notification-messages)", component: RulesAndNotificationsView },
     { path: "/warnmeldungen-und-korrekturfaktoren", component: AlertsAndCorrectionFactorsView },
     { path: "/hintergrund", component: HintergrundView },
     { path: "/:pathMatch(.*)*", redirect: "/aktuell" },
