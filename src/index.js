@@ -17,6 +17,7 @@ import ImpressumView from "./view/Impressum/ImpressumView.vue";
 import HintergrundView from "./view/Hintergrund/HintergrundView.vue";
 import RulesAndNotificationsView from "./view/RulesAndNotifications/RulesAndNotifications.vue";
 import AlertsAndCorrectionFactorsView from "./view/AlertsAndCorrectionFactors/AlertsAndCorrectionFactorsPage.vue";
+import UnauthorizedView from "./view/Unauthorized/UnauthorizedView.vue";
 
 import i18nMessages_de from "./assets/i18n/messages_de.json";
 import i18nMessages_en from "./assets/i18n/messages_en.json";
@@ -50,6 +51,7 @@ const routes = [
     { path: "/:locale(en|de|nl|es|fr)/rules-and-notifications/:section(notifications|rules|notification-messages)", component: RulesAndNotificationsView },
     { path: "/warnmeldungen-und-korrekturfaktoren", component: AlertsAndCorrectionFactorsView },
     { path: "/hintergrund", component: HintergrundView },
+    { path: "/unauthorized", component: UnauthorizedView },
     { path: "/:pathMatch(.*)*", redirect: "/aktuell" },
     { path: "/s", redirect: () => `/aktuell?lang=${i18n.global.locale.value}` },
 ];

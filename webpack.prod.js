@@ -2,6 +2,7 @@ const { merge } = require('webpack-merge');
 const TerserPlugin = require('terser-webpack-plugin');
 const common = require('./webpack.common.js');
 const webpack = require('webpack');
+const { getAuthEnvDefinitions } = require('./webpack.env');
 
 module.exports = merge(common, {
     mode: "production",
@@ -12,7 +13,8 @@ module.exports = merge(common, {
         new webpack.DefinePlugin({
             'global.env': {
                 apiBase: JSON.stringify('https://staging.pollen.enjambre.com.bo'),
-                iframePath: JSON.stringify('https://pollen-ui-testing.vercel.app')
+                iframePath: JSON.stringify('https://pollen-ui-testing.vercel.app'),
+                ...getAuthEnvDefinitions(),
             },
         }),
     ]

@@ -1,6 +1,7 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
 const webpack = require('webpack');
+const { getAuthEnvDefinitions } = require('./webpack.env');
 
 module.exports = merge(common, {
     mode: 'development',
@@ -18,6 +19,7 @@ module.exports = merge(common, {
             'global.env': {
                 apiBase: JSON.stringify('https://staging.pollen.enjambre.com.bo'),
                 iframePath: JSON.stringify('http://localhost:3000'),
+                ...getAuthEnvDefinitions(),
             },
         }),
     ],
